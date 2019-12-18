@@ -1,65 +1,112 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en-GB">
+
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.6.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.6.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.6.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.6.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.6.0/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--<meta http-equiv="cache-control" content="Private" />
+  <meta http-equiv="Expires" content="604800" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FF00FF" />
+    <meta name="Description" content="Emancipation, Education and Empowerment of Women." />
+    <link rel="icon" href="resources/images/icons/favicon_48.png" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta property="og:type" content="event">
+    <meta name="keywords"
+      content="AIWC,aiwc,all india women's conference,all india womens conference,bangalore,aiwc bangalore,aiwc-bangalore">
+    <meta name="robots" content="index, follow">
+    <meta property="og:site_name" content="AIWC Bangalore">
+    <meta property="og:title" content="AIWC Bangalore" />
+    <meta property="og:description" content="Emancipation, Education and Empowerment of Women." />
+    <meta property="og:url" content="https://aiwcbangalore.org/" />
+    <meta property="og:image" content="resources/images/icons/og_512.jpg" />
+    <meta property="og:image:alt" content="resources/images/icons/og_512.jpg" />
+    <meta property="og:image:secure_url" content="resources/images/icons/og_512.jpg" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="event:start_time" content="1571977800" />
+    <link rel="preconnect" href="https://aiwcbangalore.org/" crossorigin />
+    <link rel="preconnect" href="https://google.com" crossorigin />
+    <link rel="shortcut icon" type="image/png" href="resources/images/icons/favicon_48.png" />
+    <link rel="apple-touch-icon" href="resources/images/icons/favicon_192.png">
+    <link rel="manifest" href="manifest.json" />
+    <link type="text/css" rel="stylesheet" href="resources/styles/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="resources/styles/main.css" media="screen,projection" />
+    <title>AIWC Bangalore</title>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
   </head>
+
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- What if some browser does not support javascript or has turned it off? -->
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+    <noscript>Unfortunately, your browser does not support javascript. Either that or it's disabled. Maybe try to enable
+      it? Privacy centric browsers like Tor or Brave tend to do this more often than you think. Don't worry. We respect
+      your privacy and will never collect data from you without your explicit consent. If you want to know for
+      sure, head over to our <a href="https://privacy.aiwcbangalore.org/" title="Privacy Policy"
+        alt="https://privacy.aiwcbangalore.org/">Privacy Policy</a>.</noscript>
+
+    <!-- Navbar -->
+
+    <nav class="z-depth-0">
+      <div class="nav-wrapper"
+        style="background-color:#FFFFFF !important; background-image: linear-gradient(to right, #FFFFFF, #F9F9F9); box-shadow: none !important;">
+        <a href="index.html" class="brand-logo black-text"><img src="resources/images/icons/favicon_192.png"
+            style="height:3em;" alt="Unable to load image" /></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li
+            style="background-color:#FFFFFF !important; background-image: linear-gradient(to right, #F9F9F9, #F0F0F0);">
+            <a href="#" class="roboto black-text" style="font-size: 2em;">AIWC Bangalore</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="page-footer" style="background-color:#F9F9F9 !important;">
+      <div class="row">
+        <div class="col l2 offset-l1 s12">
+          <img src="resources/images/icons/favicon_512.png" style="height:16.5em;" alt="Unable to load image" />
+        </div>
+        <div class="col l4 s12">
+          <h3 class="black-text">AIWC Bangalore</h3>
+          <p class="black-text" style="font-size:1.2em;">32<sup>nd</sup> <i>"E"</i> Cross Road, K V Layout, <br />LIC
+            Colony,
+            Jayanagar 3<sup>rd</sup> Block, <br />Bengaluru, Karnataka, India - 560 092</p>
+          <p class="black-text">
+            <a class="valign-wrapper" href="mailto:info@aiwcbangalore.org" target="_blank" rel="noreferrer"
+              title="Send us an email" style="color:#000000;"><i
+                class="material-icons">email</i>&emsp;info@aiwcbangalore.org</a>
+          </p>
+        </div>
+        <div class="col l4 s12" style="margin-top:1.2em;">
+          <h5 class="black-text">What's AIWC?</h5>
+          <p class="black-text">
+            All India Women’s Conference (AIWC) was founded in 1927 and registered in 1930 under the Societies
+            Registration Act XXI of 1850. It is an organisation dedicated to the upliftment and betterment of women and
+            children.
+            <br />
+            <br />
+            <a href="https://aiwcbangalore.org/aboutus" target="_blank" rel="noreferrer"
+              class="waves-effect waves-light btn grey" style="margin-right:3em;"><i
+                class="material-icons left">menu_book</i>Learn
+              More</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">&copy; <span id="footerYear">2019</span> <b>All India Women's Conference</b>. All rights
+          reserved.</div>
+      </div>
+    </footer>
+
   </body>
+
 </html>
