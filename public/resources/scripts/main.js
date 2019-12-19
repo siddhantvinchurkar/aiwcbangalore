@@ -33,8 +33,13 @@ window.onload = function () {
 		loadJS('resources/scripts/firebase-analytics.js');
 		loadJS('resources/scripts/firebase-auth.js');
 		loadJS('resources/scripts/firebase-firestore.js');
+		loadJS('resources/scripts/firebase-storage.js');
+		loadJS('resources/scripts/firebase-performance.js');
+		loadJS('resources/scripts/firebase-messaging.js');
 		setTimeout(function () {
 			loadJS('resources/scripts/firebase-init.js');
+			$('.parallax').parallax();
 		}, 3000);
 	}, 3000);
+
 }
