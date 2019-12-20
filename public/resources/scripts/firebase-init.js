@@ -11,9 +11,9 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 firebase.auth().useDeviceLanguage();
-window.perf = firebase.performance();
-window.messaging = firebase.messaging();
-window.messaging.usePublicVapidKey("BN9nMIAer_ewk7AwkSPlpMGIE5SBjnV2x5gwhGqXTR2sfd9lvlSuhICcXklPsj76ULTV9qP_HftuvVjxvl4J0SE");
+var perf = firebase.performance();
+var messaging = firebase.messaging();
+messaging.usePublicVapidKey("BN9nMIAer_ewk7AwkSPlpMGIE5SBjnV2x5gwhGqXTR2sfd9lvlSuhICcXklPsj76ULTV9qP_HftuvVjxvl4J0SE");
 Notification.requestPermission().then((permission) => {
 	if (permission === 'granted') {
 		// TODO(developer): Retrieve an Instance ID token for use with FCM.
