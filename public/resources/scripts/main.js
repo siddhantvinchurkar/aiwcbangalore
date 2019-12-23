@@ -147,14 +147,10 @@ window.onload = function () {
 
 					$('#submit').click(function () {
 						M.Modal.getInstance(progressDialogModal).open();
-						var existBool = false;
-						var docId = 'unknown_variable';
-						db.collection('email_list').where('email', '==', email).get().then(function (querySnapshot) {
-							querySnapshot.forEach(function (doc) {
-								existBool = true;
-								docId = doc.id;
-							});
-							if (existBool) {
+						var docId = 'false';
+						$.get('checkDatabaseForMatch?email=' + email, function (response) {
+							if (response) {
+								docId = response;
 								db.collection('email_list').doc(docId).update({ email: email, updated_on: new Date(), }).then(function () {
 									db.collection('mail').add({
 										from: 'AIWC Bangalore <noreply@aiwcbangalore.org>',
@@ -194,8 +190,6 @@ window.onload = function () {
 									console.error(error);
 								});
 							}
-						}).catch(function (error) {
-							console.error(error);
 						});
 					});
 

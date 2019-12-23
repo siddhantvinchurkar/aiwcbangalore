@@ -22,8 +22,8 @@
         "function": "authorizeAccess"
       },
       {
-        "source": "/getCSV",
-        "function": "getCSV"
+        "source": "/checkDatabaseForMatch",
+        "function": "checkDatabaseForMatch"
       }
     ]
   },

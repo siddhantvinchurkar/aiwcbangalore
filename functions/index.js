@@ -1,7 +1,6 @@
 const functions = require('firebase-functions');
-const admin = require('firebase-admin');
-admin.initializeApp();
-const db = admin.firestore();
+const admin = require("firebase-admin");
+const db = admin.initializeApp().firestore();
 
 const USERNAME = 'admin'
 const PASSWORD = 'admin'
@@ -44,4 +43,25 @@ exports.authorizeAccess = functions.https.onRequest((req, res) => {
 		console.error(error);
 	});
 
+});
+
+exports.checkDatabaseForMatch = functions.https.onRequest((req, res) => {
+	db.collection('email_list').where('email', '==', req.query.email).get().then((querySnapshot) => {
+		var conclusion = 0;
+		var docId = 'true'
+		querySnapshot.forEach((doc) => {
+			conclusion++;
+			docId = doc.id
+		});
+		if (conclusion === 0) {
+			res.status(200).send(false);
+		}
+		else {
+			res.status(200).send(docId);
+		}
+		res.end();
+		return true;
+	}).catch((error) => {
+		console.error(error);
+	});
 });
