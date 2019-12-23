@@ -199,6 +199,8 @@ window.onload = function () {
 						});
 					});
 
+					//TODO: Lazy-load all images.
+
 					/* Begin execution of non-critical code */
 
 				}

@@ -15,6 +15,16 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/emails",
+        "function": "authorizeAccess"
+      },
+      {
+        "source": "/getCSV",
+        "function": "getCSV"
+      }
     ]
   },
   "storage": {
