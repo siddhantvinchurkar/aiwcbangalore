@@ -274,6 +274,18 @@ window.onload = function () {
 						}, 2000);
 					});
 
+					$("#contact_us").click(function () {
+						$('html, body').animate({
+							scrollTop: $("#footer").offset().top
+						}, 2000);
+					});
+
+					$("#learn_more").click(function () {
+						$('html, body').animate({
+							scrollTop: $("#s1").offset().top
+						}, 2000);
+					});
+
 					//TODO: Lazy-load all images.
 
 					/* Begin execution of non-critical code */
