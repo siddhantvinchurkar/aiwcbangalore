@@ -109,15 +109,15 @@ window.onload = function () {
 
 			/* Inject Content (Section 1) */
 
-			$('#s1h1').html('<i class="material-icons left" style="font-size: 1em; color:#FF0000;">error</i>What?');
+			$('#s1h1').html('<i class="material-icons left" style="font-size: 1em; color:#FFBB00;">error</i>What\'s AIWC?');
 			$('#s1p1').html('All India Women\'s Conference(AIWC) is a non - profit organisation founded in 1927 registered under Societies Registration Act XXI of 1850. It is a national organisation with one of the largest number of voluntary workers spread across five hundred branches across the country with more than a lakh and a half members.In 1928 the Mysore State Women\'s Conference was established in Bangalore, which changed it\'s name to AIWC Bangalore branch in 1932.');
-			$('#s1h2').html('<i class="material-icons left" style="font-size: 1em; color: #FFBB00;">help</i>Why?');
+			$('#s1h2').html('<i class="material-icons left" style="font-size: 1em; color: #0000FF;">help</i>What do you do?');
 			$('#s1p2').html('Our organisation is dedicated to the upliftment and betterment of the society. Since inception, AIWC has been deeply concerned about the economic, social and legal needs of women and society as whole and modification of laws pertaining dowry, child marriage, etc. The organisation has always adopted participatory approach in the implementation of it\'s programs focusing on women\'s education, health (both physical and mental), capacity building and income generation, etc. through a network of it\'s branches spread across the country.');
 
 			/* Inject Content (Section 2) */
 
-			$('#s2h1').html('<i class="material-icons left" style="font-size: 1em; color:#009900;">history</i>A Brief History');
-			$('#s2p1').html('AIWC has, over the years, grown and spread all over India. Members across the country carry on the work zealously with selfless dedication. AIWC is recognised the world over as a premier organisation working for empowerment of women.');
+			$('#s2h1').html('<i class="material-icons left" style="font-size: 1em; color:#FF7700;">remove_red_eye</i>Our Vision');
+			$('#s2p1').html('Emancipation, Education and Empowerment of Women.');
 			$('#s2h2').html('<i class="material-icons left" style="font-size: 1em; color: #0000FF;">emoji_objects</i>Our Mission');
 			$('#s2p2').html('Work actively for the progress and welfare of women and children. Help women utilize to the fullest the Fundamental Rights conferred on them by the Constitution of India. To work for a society where women are free from all types of violence, especially domestic violence and sexual harassment. To empower women and prepare them for taking up leadership roles.');
 
@@ -130,6 +130,37 @@ window.onload = function () {
 
 			$('#s4h1').html('<i class="material-icons left" style="font-size: 1em; color: #FF00FF;">emoji_people</i>Keep in touch');
 			$('#s4p1').html('Leave us your email address so we can keep you updated about AIWC.');
+
+			/* Inject Content (Section 5) */
+
+			$('#s5h1').html('<i class="material-icons left" style="font-size: 1em; color: #00CC00">history</i>A Brief History');
+			$('#s5p1').html('In 1927 under the guidance of Ms. Margaret Cousins, the AIWC was established for the welfare of women and children. All-India Women’s Conference on Educational Reform decided that there could be little progress in educational matters unless harmful social customs were eradicated. Hence the organization worked towards spreading its activities across the country. This movement coincided with the formation of the AIWC Bangalore branch under the name ‘Mysore State Women’s Conference ‘in the year  1928 under the leadership of  Lady Mirza Ismail. Mrs. Zeebundeh Begum Shirazi, wife of Mirza Ismail was appointed as the private secretary to the Maharajah of Mysore, who was later elevated as Diwan of Mysore in 1928. Existing documents date back to 1919 – 1920, which speak of Cousins being the first Head of the National Girls\' School at Mangalore, Karnataka and probably influencing and encouraging Mrs. Kamaladevi Chattopadhyay President AIWC 1944-45 from Mangalore Karnataka.');
+			$('#s5p2').html('In the subsequent year, Mysore was incorporated into the state of Karnataka and it is during this period ‘Mysore State Women’s Conference’ was renamed as All India Women’s Conference, Bangalore Branch. The Bangalore branch experienced the zeal and vigor under the Presidentship of Lady Ramaswamy Mudaliar (1932), Mrs. R. A. Srinivas Iyengar (1973), Mrs. Bharathi Bai (1973), Mrs. Vilasini Nagesh (1998), Mrs. Nalinakshi Sanappa (2004), Mrs. Saroja Nanjappa (2010), Mrs. Nirmala P. N. (2014) and, at present Mrs. Amitha Anand. These women along with many others who supported them worked tirelessly for the growth of the organization and betterment of the womenfolk. They soon became an active counterpart in the All India Women’s Movement.');
+			$('#s5p3').html('Mrs. Kamalamma Dasappa, from Mahila Seva Samaja (Basavangudi, Bangalore) was Member in-charge of the indigenous industries and; Shrimati Kamaladevi headed the Women Workers\' Training Scheme (Mangalore, India). The delegates from Karnataka during December-January, 1941-42 included Shrimati  Kamaladevi, Mrs. Mackinnyn, and Mrs. Krishnabai Panjikar. Some of the other co-opted members of AIWC were Mrs. B. Kameswaramma (Mysore) and Mrs. A. Sharadamma (Mahila Seva Samaja, Bangalore City).');
+			$('#s5p4').html('One of the greatest resolutions and achievements of AIWC in its early years was the progress made in the Maternity and Child Welfare Work at several centre’s in Mysore and Bangalore. Some of the major institutions as established included maternity hospitals and maternity wards attached to dispensaries in the District Head-quarters. Also, many villages received the care of maternity homes. The women also advocated for the appointment of a  Senior Lady Medical Officer as the Chief Medical Officer in charge of all the Maternity Hospitals and Homes in the same grade as the Senior Surgeon, to supervise and to be in touch with the Maternity Work in all parts of the State.');
+			$('#s5p5').html('AIWC was formed to function as an organization dedicated to the upliftment and betterment of women and children. The organization continues its mission and has since diversified into various social and economic issues concerning women. In the 91  years of service with over  1500 members in and 5 constituent branches   AWIC Bangalore, carry on the work zealously with selfless dedication. AIWC is recognized as the premier organization in Karnataka working for women\'s development and empowerment.');
+			$('#s5p6').html('In the last 91 years, AIWC Bangalore has spread its wings to diverse areas of social and interpersonal life that influence the quality of life of the women in Karnataka. It established a destitute home and Balewadi for children living in the slums of Tilaknagar, for 23 years now. Children were also provided with mid-day meals and medicines. Socio-economic (cut-cocoon silk-spinning project) and vocational (tailoring classes) programs were successful at equipping women with on the job skills and improving employment opportunities. Alongside work skill training, the organization also extends its support and encouragement to working women who aspire to develop an identity of their own.');
+			$('#s5p7').html('The branch also believes in providing equal opportunities for men and women to enhance the quality of marital life by starting a family counseling center. It also conducts multiple workshops and camps, especially for women but also including other members of society. Some of the topics addressed include prevention of domestic violence; global action for children rights and quality education and women’s legal rights; medical and mental health topics such as awareness about breast cancer and HIV/AIDS, importance of regular health check-ups (in slums) and awareness of depression among women have been explored; the organization has also highlighted social issues of dowry harassment, female feticide, and role of women in communal harmony among many others.');
+			$('#s5p8').html('Within the shortcomings of the local scenario and larger Indian fabric, AIWC Bangalore has been able to initiate, sustain and achieve a commendable balance of taking forward not just the women of the society, but also every member of this very same society who understand the significant role the wives’, mothers’, daughters’ and sisters’ in the prosperity of each house, every state, the nation at large and at the global level.');
+
+			/* Inject Content (Section 6) */
+
+			$('#s6h1').html('<i class="material-icons left" style="font-size: 1em; color: #FF0077">rowing</i>Activities');
+			$('#s6p1').html('As per the vision and mission of our Head office, AIWC Delhi, activities are being carried out by the branch under the guidance of our senior patrons, executive members, and members. The branch has 5 constituent branches. We have been conducting health checkup camps, mammogram for breast cancer detection, diabetics, medical aid to the needy, awareness programs and workshops on mental health, female feticide, dowry and harassment, HIV/AIDS, family /adolescent counseling, herbal / terrace gardening, domestic violence, skill training – tailoring/embroidery, distribution of uniforms, stress management program for SSLC students,  awareness on water management, consumer awareness, and many more programs. All important days and festival celebrations are conducted.');
+
+			/* Inject Content (Section 7) */
+
+			$('#s7h1').html('<i class="material-icons left" style="font-size: 1em; color: #0000FF">card_membership</i>Membership');
+			$('#s7p1').html('AIWC  wishes to grow further by enrolling all the women/girls of our Society throughout Bangalore so that we can reach our goal.');
+			$('#s7p2').html('<b>Eligibility: </b>Women aged 18 years and above.');
+			$('#s7p3').html('Life Membership amount ₹ 500 /-');
+			$('#s7p4').html('<i>"AIWC Youth Wing"</i> formation of youth wings to look towards its young members to strengthen the next wave of social workers.');
+			$('#s7p5').html('<b>Eligibility: </b>Girls aged between 14 and 21.');
+
+			/* Inject Content (Section 8) */
+
+			$('#s8h1').html('<i class="material-icons left" style="font-size: 1em; color: #009900">home</i>Hostel');
+			$('#s8p1').html('Working Women’s Hostel was established with the purpose of providing a safe and secure place to young ladies coming to Bangalore to pursue their profession from across the country. This encourages young girls to take up a career and become economically empowered. We provide a safe environment with all amenities provided. Located in prime areas close to bus stops & metro stations with 24 hours CCTV monitoring.');
 
 			/* Authorize Session */
 
@@ -191,6 +222,56 @@ window.onload = function () {
 								});
 							}
 						});
+					});
+
+					/* Handle Scrolling */
+
+					$("#about_us").click(function () {
+						$('html, body').animate({
+							scrollTop: $("#s1").offset().top
+						}, 2000);
+					});
+
+					$("#history").click(function () {
+						$('html, body').animate({
+							scrollTop: $("#s5").offset().top
+						}, 2000);
+					});
+
+					$("#activities").click(function () {
+						$('html, body').animate({
+							scrollTop: $("#s6").offset().top
+						}, 2000);
+					});
+
+					$("#hostel").click(function () {
+						$('html, body').animate({
+							scrollTop: $("#s8").offset().top
+						}, 2000);
+					});
+
+					$("#branches").click(function () {
+						$('html, body').animate({
+							scrollTop: $("#s1").offset().top
+						}, 2000);
+					});
+
+					$("#gallery").click(function () {
+						$('html, body').animate({
+							scrollTop: $("#s1").offset().top
+						}, 2000);
+					});
+
+					$("#join_us").click(function () {
+						$('html, body').animate({
+							scrollTop: $("#s7").offset().top
+						}, 2000);
+					});
+
+					$("#contact_us").click(function () {
+						$('html, body').animate({
+							scrollTop: $("#footer").offset().top
+						}, 2000);
 					});
 
 					//TODO: Lazy-load all images.
