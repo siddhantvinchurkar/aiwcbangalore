@@ -49,6 +49,7 @@ window.onload = function () {
 
 		/* Prepare UI */
 
+		$('.materialboxed').materialbox();
 		$('.parallax').parallax();
 		$('.modal#progressDialogModal').modal({ dismissible: false });
 
@@ -111,7 +112,7 @@ window.onload = function () {
 
 			$('#s1h1').html('<i class="material-icons left" style="font-size: 1em; color:#FFBB00;">error</i>What\'s AIWC?');
 			$('#s1p1').html('All India Women\'s Conference(AIWC) is a non - profit organisation founded in 1927 registered under Societies Registration Act XXI of 1850. It is a national organisation with one of the largest number of voluntary workers spread across five hundred branches across the country with more than a lakh and a half members.In 1928 the Mysore State Women\'s Conference was established in Bangalore, which changed it\'s name to AIWC Bangalore branch in 1932.');
-			$('#s1h2').html('<i class="material-icons left" style="font-size: 1em; color: #0000FF;">help</i>What do you do?');
+			$('#s1h2').html('<i class="material-icons left" style="font-size: 1em; color: #0000FF;">help</i>What do we do?');
 			$('#s1p2').html('Our organisation is dedicated to the upliftment and betterment of the society. Since inception, AIWC has been deeply concerned about the economic, social and legal needs of women and society as whole and modification of laws pertaining dowry, child marriage, etc. The organisation has always adopted participatory approach in the implementation of it\'s programs focusing on women\'s education, health (both physical and mental), capacity building and income generation, etc. through a network of it\'s branches spread across the country.');
 
 			/* Inject Content (Section 2) */
@@ -133,7 +134,7 @@ window.onload = function () {
 
 			/* Inject Content (Section 5) */
 
-			$('#s5h1').html('<i class="material-icons left" style="font-size: 1em; color: #00CC00">history</i>A Brief History');
+			$('#s5h1').html('<i class="material-icons left" style="font-size: 1em; color: #00CC00">history</i>A Brief History of AIWC Bangalore');
 			$('#s5p1').html('In 1927 under the guidance of Ms. Margaret Cousins, the AIWC was established for the welfare of women and children. All-India Women’s Conference on Educational Reform decided that there could be little progress in educational matters unless harmful social customs were eradicated. Hence the organization worked towards spreading its activities across the country. This movement coincided with the formation of the AIWC Bangalore branch under the name ‘Mysore State Women’s Conference ‘in the year  1928 under the leadership of  Lady Mirza Ismail. Mrs. Zeebundeh Begum Shirazi, wife of Mirza Ismail was appointed as the private secretary to the Maharajah of Mysore, who was later elevated as Diwan of Mysore in 1928. Existing documents date back to 1919 – 1920, which speak of Cousins being the first Head of the National Girls\' School at Mangalore, Karnataka and probably influencing and encouraging Mrs. Kamaladevi Chattopadhyay President AIWC 1944-45 from Mangalore Karnataka.');
 			$('#s5p2').html('In the subsequent year, Mysore was incorporated into the state of Karnataka and it is during this period ‘Mysore State Women’s Conference’ was renamed as All India Women’s Conference, Bangalore Branch. The Bangalore branch experienced the zeal and vigor under the Presidentship of Lady Ramaswamy Mudaliar (1932), Mrs. R. A. Srinivas Iyengar (1973), Mrs. Bharathi Bai (1973), Mrs. Vilasini Nagesh (1998), Mrs. Nalinakshi Sanappa (2004), Mrs. Saroja Nanjappa (2010), Mrs. Nirmala P. N. (2014) and, at present Mrs. Amitha Anand. These women along with many others who supported them worked tirelessly for the growth of the organization and betterment of the womenfolk. They soon became an active counterpart in the All India Women’s Movement.');
 			$('#s5p3').html('Mrs. Kamalamma Dasappa, from Mahila Seva Samaja (Basavangudi, Bangalore) was Member in-charge of the indigenous industries and; Shrimati Kamaladevi headed the Women Workers\' Training Scheme (Mangalore, India). The delegates from Karnataka during December-January, 1941-42 included Shrimati  Kamaladevi, Mrs. Mackinnyn, and Mrs. Krishnabai Panjikar. Some of the other co-opted members of AIWC were Mrs. B. Kameswaramma (Mysore) and Mrs. A. Sharadamma (Mahila Seva Samaja, Bangalore City).');
@@ -161,6 +162,14 @@ window.onload = function () {
 
 			$('#s8h1').html('<i class="material-icons left" style="font-size: 1em; color: #009900">home</i>Hostel');
 			$('#s8p1').html('Working Women’s Hostel was established with the purpose of providing a safe and secure place to young ladies coming to Bangalore to pursue their profession from across the country. This encourages young girls to take up a career and become economically empowered. We provide a safe environment with all amenities provided. Located in prime areas close to bus stops & metro stations with 24 hours CCTV monitoring.');
+
+			/* Inject Content (Section 9) */
+
+			$('#s9h1').html('<i class="material-icons left" style="font-size: 1em; color: #FF00FF">add_a_photo</i>Gallery');
+
+			/* Inject Content (Section 10) */
+
+			$('#s10h1').html('<i class="material-icons left" style="font-size: 1em; color: #FF7700">people</i>Our Team');
 
 			/* Authorize Session */
 
@@ -228,62 +237,56 @@ window.onload = function () {
 
 					$("#about_us").click(function () {
 						$('html, body').animate({
-							scrollTop: $("#s1").offset().top
+							scrollTop: $("#s1").offset().top - 50
 						}, 2000);
 					});
 
 					$("#history").click(function () {
 						$('html, body').animate({
-							scrollTop: $("#s5").offset().top
-						}, 2000);
+							scrollTop: $("#s5").offset().top - 50
+						}, 3000);
 					});
 
 					$("#activities").click(function () {
 						$('html, body').animate({
-							scrollTop: $("#s6").offset().top
-						}, 2000);
+							scrollTop: $("#s6").offset().top - 50
+						}, 4000);
 					});
 
 					$("#hostel").click(function () {
 						$('html, body').animate({
-							scrollTop: $("#s8").offset().top
-						}, 2000);
-					});
-
-					$("#branches").click(function () {
-						$('html, body').animate({
-							scrollTop: $("#s1").offset().top
+							scrollTop: $("#s8").offset().top - 50
 						}, 2000);
 					});
 
 					$("#gallery").click(function () {
 						$('html, body').animate({
-							scrollTop: $("#s1").offset().top
+							scrollTop: $("#s9").offset().top - 50
+						}, 2000);
+					});
+
+					$("#our_team").click(function () {
+						$('html, body').animate({
+							scrollTop: $("#s10").offset().top - 50
 						}, 2000);
 					});
 
 					$("#join_us").click(function () {
 						$('html, body').animate({
-							scrollTop: $("#s7").offset().top
+							scrollTop: $("#s7").offset().top - 50
 						}, 2000);
 					});
 
 					$("#contact_us").click(function () {
 						$('html, body').animate({
-							scrollTop: $("#footer").offset().top
-						}, 2000);
+							scrollTop: $("#footer").offset().top - 50
+						}, 3000);
 					});
 
-					$("#contact_us").click(function () {
+					$("#scroll_up").click(function () {
 						$('html, body').animate({
-							scrollTop: $("#footer").offset().top
-						}, 2000);
-					});
-
-					$("#learn_more").click(function () {
-						$('html, body').animate({
-							scrollTop: $("#s1").offset().top
-						}, 2000);
+							scrollTop: $("body").offset().top
+						}, 7000);
 					});
 
 					//TODO: Lazy-load all images.
