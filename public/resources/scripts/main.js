@@ -18,7 +18,7 @@ window.onload = function () {
 
 	/* Register a service worker */
 
-	if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../sw.js'); }
+	if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js'); }
 
 	/* A function to lazy-load
 	 javascript files */
@@ -37,6 +37,9 @@ window.onload = function () {
 
 		jsElm.src = file;
 
+		// make sure files load asynchronously
+		jsElm.async = true;
+
 		// finally insert the element to the body element in order to load the script
 
 		document.body.appendChild(jsElm);
@@ -45,9 +48,7 @@ window.onload = function () {
 	/* Lazy-load necessary scripts */
 
 	loadJS('resources/scripts/jquery.min.js');
-	loadJS('resources/scripts/jquery-ui.min.js');
 	loadJS('resources/scripts/materialize.min.js');
-	loadJS('resources/scripts/sweetalert.js');
 	loadJS('resources/scripts/firebase-app.js');
 	setTimeout(function () {
 
@@ -62,9 +63,9 @@ window.onload = function () {
 		loadJS('resources/scripts/firebase-analytics.js');
 		loadJS('resources/scripts/firebase-auth.js');
 		loadJS('resources/scripts/firebase-firestore.js');
-		loadJS('resources/scripts/firebase-storage.js');
 		loadJS('resources/scripts/firebase-performance.js');
 		loadJS('resources/scripts/firebase-messaging.js');
+		loadJS('resources/scripts/sweetalert.js');
 		setTimeout(function () {
 			/* Initialise Firebase */
 
@@ -84,13 +85,6 @@ window.onload = function () {
 			var perf = firebase.performance();
 			var messaging = firebase.messaging();
 			messaging.usePublicVapidKey("BN9nMIAer_ewk7AwkSPlpMGIE5SBjnV2x5gwhGqXTR2sfd9lvlSuhICcXklPsj76ULTV9qP_HftuvVjxvl4J0SE");
-			Notification.requestPermission().then((permission) => {
-				if (permission === 'granted') {
-					// TODO: Retrieve an Instance ID token for use with FCM.
-				} else {
-					console.log('Unable to get permission to notify.');
-				}
-			});
 			var db = firebase.firestore();
 
 			/* Kill UI Blocker */
@@ -207,6 +201,13 @@ window.onload = function () {
 									}).then(function () {
 										Swal.fire('Perfect!', 'We\'ll keep you updated.', 'success');
 										M.Modal.getInstance(progressDialogModal).close();
+										Notification.requestPermission().then((permission) => {
+											if (permission === 'granted') {
+												// TODO: Retrieve an Instance ID token for use with FCM.
+											} else {
+												console.log('Unable to get permission to notify.');
+											}
+										});
 									}).catch(function (error) {
 										console.error(error);
 									});
@@ -227,6 +228,13 @@ window.onload = function () {
 									}).then(function () {
 										Swal.fire('Perfect!', 'We\'ll keep you updated.', 'success');
 										M.Modal.getInstance(progressDialogModal).close();
+										Notification.requestPermission().then((permission) => {
+											if (permission === 'granted') {
+												// TODO: Retrieve an Instance ID token for use with FCM.
+											} else {
+												console.log('Unable to get permission to notify.');
+											}
+										});
 									}).catch(function (error) {
 										console.error(error);
 									});
@@ -236,75 +244,71 @@ window.onload = function () {
 							}
 						});
 					});
-
-					/* Handle Scrolling */
-
-					$("#about_us").click(function () {
-						$('html, body').animate({
-							scrollTop: $("#s1").offset().top - 50
-						}, 2000);
-					});
-
-					$("#history").click(function () {
-						$('html, body').animate({
-							scrollTop: $("#s5").offset().top - 50
-						}, 3000);
-					});
-
-					$("#activities").click(function () {
-						$('html, body').animate({
-							scrollTop: $("#s6").offset().top - 50
-						}, 4000);
-					});
-
-					$("#hostel").click(function () {
-						$('html, body').animate({
-							scrollTop: $("#s8").offset().top - 50
-						}, 2000);
-					});
-
-					$("#gallery").click(function () {
-						$('html, body').animate({
-							scrollTop: $("#s9").offset().top - 50
-						}, 2000);
-					});
-
-					$("#our_team").click(function () {
-						$('html, body').animate({
-							scrollTop: $("#s10").offset().top - 50
-						}, 2000);
-					});
-
-					$("#join_us").click(function () {
-						$('html, body').animate({
-							scrollTop: $("#s7").offset().top - 50
-						}, 2000);
-					});
-
-					$("#contact_us").click(function () {
-						$('html, body').animate({
-							scrollTop: $("#footer").offset().top - 50
-						}, 3000);
-					});
-
-					$("#scroll_up").click(function () {
-						$('html, body').animate({
-							scrollTop: $("body").offset().top
-						}, 7000);
-					});
-
-					//TODO: Lazy-load all images.
-
-					/* Begin execution of non-critical code */
-
 				}
 
-				else {
-					console.error('Unable to authorize session!');
-				}
+				/* Handle Scrolling */
+
+				$("#about_us").click(function () {
+					$('html, body').animate({
+						scrollTop: $("#s1").offset().top - 50
+					}, 2000);
+				});
+
+				$("#history").click(function () {
+					$('html, body').animate({
+						scrollTop: $("#s5").offset().top - 50
+					}, 3000);
+				});
+
+				$("#activities").click(function () {
+					$('html, body').animate({
+						scrollTop: $("#s6").offset().top - 50
+					}, 4000);
+				});
+
+				$("#hostel").click(function () {
+					$('html, body').animate({
+						scrollTop: $("#s8").offset().top - 50
+					}, 2000);
+				});
+
+				$("#gallery").click(function () {
+					$('html, body').animate({
+						scrollTop: $("#s9").offset().top - 50
+					}, 2000);
+				});
+
+				$("#our_team").click(function () {
+					$('html, body').animate({
+						scrollTop: $("#s10").offset().top - 50
+					}, 2000);
+				});
+
+				$("#join_us").click(function () {
+					$('html, body').animate({
+						scrollTop: $("#s7").offset().top - 50
+					}, 2000);
+				});
+
+				$("#contact_us").click(function () {
+					$('html, body').animate({
+						scrollTop: $("#footer").offset().top - 50
+					}, 3000);
+				});
+
+				$("#scroll_up").click(function () {
+					$('html, body').animate({
+						scrollTop: $("body").offset().top
+					}, 7000);
+				});
+
+				//TODO: Lazy-load all images.
+
+				/* Begin execution of non-critical code */
+
 			});
 
 		}, 3000);
-	}, 3000);
+	}, 7000);
 
 }
