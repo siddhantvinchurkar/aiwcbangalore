@@ -16,6 +16,10 @@ var email_content = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//
 
 window.onload = function () {
 
+	/* Register a service worker */
+
+	if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js'); }
+
 	/* A function to lazy-load
 	 javascript files */
 
