@@ -29,6 +29,10 @@
     <meta property="event:start_time" content="1571977800" />
     <link rel="preconnect" href="https://aiwcbangalore.org/" crossorigin />
     <link rel="preconnect" href="https://google.com" crossorigin />
+    <link rel="preconnect" href="https://firebaseremoteconfig.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+    <link rel="preconnect" href="https://storage.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://firebaseinstallations.googleapis.com" crossorigin />
     <link rel="shortcut icon" type="image/png" href="resources/images/icons/favicon_48.png" />
     <link rel="apple-touch-icon" href="resources/images/icons/favicon_192.png">
     <link rel="manifest" href="manifest.json" />
@@ -454,7 +458,7 @@
                 <div class="card-panel grey lighten-5 z-depth-1">
                   <div class="row valign-wrapper" style="margin-bottom: 0px !important;">
                     <div class="col s4 m4 l4 xl4">
-                      <img datasrc="resources/images/icons/favicon_512.webp" alt="Unable to load image"
+                      <img data-src="resources/images/icons/favicon_512.webp" alt="Unable to load image"
                         class="lazyload circle responsive-img">
                     </div>
                     <div class="col s8 m8 l8 xl8">
@@ -848,6 +852,14 @@
     </footer>
 
     <script type="application/javascript" src="resources/scripts/lazysizes.min.js" async></script>
+    <script type="application/javascript" src="resources/scripts/firebase-app.js" defer></script>
+    <script type="application/javascript" src="resources/scripts/jquery.min.js" defer></script>
+    <script type="application/javascript" src="resources/scripts/materialize.min.js" defer></script>
+    <script type="application/javascript" src="resources/scripts/firebase-analytics.js" async></script>
+    <script type="application/javascript" src="resources/scripts/firebase-auth.js" async></script>
+    <script type="application/javascript" src="resources/scripts/firebase-firestore.js" async></script>
+    <script type="application/javascript" src="resources/scripts/firebase-messaging.js" async></script>
+    <script type="application/javascript" src="resources/scripts/firebase-performance.js" async></script>
     <script type="application/javascript" src="resources/scripts/main.js" defer></script>
 
   </body>

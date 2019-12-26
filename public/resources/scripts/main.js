@@ -20,54 +20,13 @@ window.onload = function () {
 
 	if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js'); }
 
-	/* A function to lazy-load
-	 javascript files */
+	/* Prepare UI */
 
-	function loadJS(file) {
+	$('.materialboxed').materialbox();
+	$('.parallax').parallax();
+	$('.modal#progressDialogModal').modal({ dismissible: false });
 
-		// DOM: Create the script element
-
-		var jsElm = document.createElement("script");
-
-		// set the type attribute
-
-		jsElm.type = "application/javascript";
-
-		// make the script element load file
-
-		jsElm.src = file;
-
-		// make sure files load asynchronously
-		jsElm.async = true;
-
-		// finally insert the element to the body element in order to load the script
-
-		document.body.appendChild(jsElm);
-	}
-
-	/* Lazy-load necessary scripts */
-
-	loadJS('resources/scripts/jquery.min.js');
-	loadJS('resources/scripts/materialize.min.js');
-	loadJS('resources/scripts/firebase-app.js');
-
-	setTimeout(function () {
-
-		/* Prepare UI */
-
-		$('.materialboxed').materialbox();
-		$('.parallax').parallax();
-		$('.modal#progressDialogModal').modal({ dismissible: false });
-
-		M.Modal.getInstance(progressDialogModal).open();
-
-		loadJS('resources/scripts/firebase-analytics.js');
-		loadJS('resources/scripts/firebase-auth.js');
-		loadJS('resources/scripts/firebase-firestore.js');
-		loadJS('resources/scripts/firebase-performance.js');
-		loadJS('resources/scripts/firebase-messaging.js');
-		loadJS('resources/scripts/sweetalert.js');
-	}, 3000);
+	M.Modal.getInstance(progressDialogModal).open();
 
 	setTimeout(function () {
 
@@ -112,21 +71,21 @@ window.onload = function () {
 
 		/* Inject Content (Section 1) */
 
-		$('#s1h1').html('<i class="material-icons left" style="font-size: 1em; color:#FFBB00;">error</i>What\'s AIWC?');
+		$('#s1h1').html('<i class="material-icons left" style="font-size: 1em; color:#996600;">error</i>What\'s AIWC?');
 		$('#s1p1').html('All India Women\'s Conference(AIWC) is a non - profit organisation founded in 1927 registered under Societies Registration Act XXI of 1850. It is a national organisation with one of the largest number of voluntary workers spread across five hundred branches across the country with more than a lakh and a half members.In 1928 the Mysore State Women\'s Conference was established in Bangalore, which changed it\'s name to AIWC Bangalore branch in 1932.');
 		$('#s1h2').html('<i class="material-icons left" style="font-size: 1em; color: #0000FF;">help</i>What do we do?');
 		$('#s1p2').html('Our organisation is dedicated to the upliftment and betterment of the society. Since inception, AIWC has been deeply concerned about the economic, social and legal needs of women and society as whole and modification of laws pertaining dowry, child marriage, etc. The organisation has always adopted participatory approach in the implementation of it\'s programs focusing on women\'s education, health (both physical and mental), capacity building and income generation, etc. through a network of it\'s branches spread across the country.');
 
 		/* Inject Content (Section 2) */
 
-		$('#s2h1').html('<i class="material-icons left" style="font-size: 1em; color:#FF7700;">remove_red_eye</i>Our Vision');
+		$('#s2h1').html('<i class="material-icons left" style="font-size: 1em; color:#BB5500;">remove_red_eye</i>Our Vision');
 		$('#s2p1').html('Emancipation, Education and Empowerment of Women.');
 		$('#s2h2').html('<i class="material-icons left" style="font-size: 1em; color: #0000FF;">emoji_objects</i>Our Mission');
 		$('#s2p2').html('Work actively for the progress and welfare of women and children. Help women utilize to the fullest the Fundamental Rights conferred on them by the Constitution of India. To work for a society where women are free from all types of violence, especially domestic violence and sexual harassment. To empower women and prepare them for taking up leadership roles.');
 
 		/* Inject Content (Section 3) */
 
-		$('#s3h1').html('<i class="material-icons left" style="font-size: 1em; color: #D4AF37;">emoji_events</i>Things We\'ve Achieved');
+		$('#s3h1').html('<i class="material-icons left" style="font-size: 1em; color: #927001;">emoji_events</i>Things We\'ve Achieved');
 		$('#s3p1').html('&bull;&emsp;Significant role in bringing about various Legislative Reforms like Sarda Act, Hindu Code Bill, Devdasi Act, Universal Adult Franchise, Factory and Mines Act and Maternity Benefits Act.<br /><br />&bull;&emsp;Pioneering Institutions founded by AIWC now functioning as autonomous apex bodies such as All India Women\'s Education Fund Association, founded in 1929 for the cause of education of women (AIWEFA). In 1932, India\'s first college of Home Sciences for women, Lady Irwin College, New Delhi was established by AIWEFA.<br /><br />&bull;&emsp;At the international level, AIWC has Consultative Status with the United Nations (ECOSOC), affiliated to the International Alliance for Women (IAW) and gained membership of <b>PPSEAWA</b>, <b>INFORSE</b>, <b>GWP</b> and <b>WREN</b>.');
 
 		/* Inject Content (Section 4) */
@@ -136,7 +95,7 @@ window.onload = function () {
 
 		/* Inject Content (Section 5) */
 
-		$('#s5h1').html('<i class="material-icons left" style="font-size: 1em; color: #00CC00">history</i>A Brief History of AIWC Bangalore');
+		$('#s5h1').html('<i class="material-icons left" style="font-size: 1em; color: #008800">history</i>A Brief History of AIWC Bangalore');
 		$('#s5p1').html('In 1927 under the guidance of Ms. Margaret Cousins, the AIWC was established for the welfare of women and children. All-India Women’s Conference on Educational Reform decided that there could be little progress in educational matters unless harmful social customs were eradicated. Hence the organization worked towards spreading its activities across the country. This movement coincided with the formation of the AIWC Bangalore branch under the name ‘Mysore State Women’s Conference ‘in the year  1928 under the leadership of  Lady Mirza Ismail. Mrs. Zeebundeh Begum Shirazi, wife of Mirza Ismail was appointed as the private secretary to the Maharajah of Mysore, who was later elevated as Diwan of Mysore in 1928. Existing documents date back to 1919 – 1920, which speak of Cousins being the first Head of the National Girls\' School at Mangalore, Karnataka and probably influencing and encouraging Mrs. Kamaladevi Chattopadhyay President AIWC 1944-45 from Mangalore Karnataka.');
 		$('#s5p2').html('In the subsequent year, Mysore was incorporated into the state of Karnataka and it is during this period ‘Mysore State Women’s Conference’ was renamed as All India Women’s Conference, Bangalore Branch. The Bangalore branch experienced the zeal and vigor under the Presidentship of Lady Ramaswamy Mudaliar (1932), Mrs. R. A. Srinivas Iyengar (1973), Mrs. Bharathi Bai (1973), Mrs. Vilasini Nagesh (1998), Mrs. Nalinakshi Sanappa (2004), Mrs. Saroja Nanjappa (2010), Mrs. Nirmala P. N. (2014) and, at present Mrs. Amitha Anand. These women along with many others who supported them worked tirelessly for the growth of the organization and betterment of the womenfolk. They soon became an active counterpart in the All India Women’s Movement.');
 		$('#s5p3').html('Mrs. Kamalamma Dasappa, from Mahila Seva Samaja (Basavangudi, Bangalore) was Member in-charge of the indigenous industries and; Shrimati Kamaladevi headed the Women Workers\' Training Scheme (Mangalore, India). The delegates from Karnataka during December-January, 1941-42 included Shrimati  Kamaladevi, Mrs. Mackinnyn, and Mrs. Krishnabai Panjikar. Some of the other co-opted members of AIWC were Mrs. B. Kameswaramma (Mysore) and Mrs. A. Sharadamma (Mahila Seva Samaja, Bangalore City).');
@@ -171,7 +130,7 @@ window.onload = function () {
 
 		/* Inject Content (Section 10) */
 
-		$('#s10h1').html('<i class="material-icons left" style="font-size: 1em; color: #FF7700">people</i>Our Team');
+		$('#s10h1').html('<i class="material-icons left" style="font-size: 1em; color: #BD5800">people</i>Our Team');
 
 		/* Authorize Session */
 
@@ -312,5 +271,5 @@ window.onload = function () {
 
 		});
 
-	}, 6000);
+	}, 5000);
 }

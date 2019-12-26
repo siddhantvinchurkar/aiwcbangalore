@@ -31,7 +31,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "c5508b4fb59a856c85c221c74449a6d4"
+    "revision": "9871a837df9970d9bf16465b1f532106"
   },
   {
     "url": "manifest.json",
@@ -247,7 +247,7 @@ self.__precacheManifest = [
   },
   {
     "url": "resources/scripts/main.js",
-    "revision": "43e6c5469500add79d51522143ec624e"
+    "revision": "d13aa53f23b4a46601854a8ede3ab00f"
   },
   {
     "url": "resources/scripts/materialize.min.js",
