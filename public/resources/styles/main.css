@@ -60,3 +60,11 @@ a .active{
 .card-panel{
   padding: 10px;
 }
+
+.input-field label{
+  color: #4A4A4A;
+}
+
+.input-field label .active{
+  color: #26A69A;
+}
