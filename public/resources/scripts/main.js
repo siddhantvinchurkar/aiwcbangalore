@@ -28,7 +28,20 @@ window.onload = function () {
 
 	M.Modal.getInstance(progressDialogModal).open();
 
-	setTimeout(function () {
+	/* Lazy load necessary JS files */
+
+	$.when(
+		$.getScript("resources/scripts/firebase-app.js"),
+		$.getScript("resources/scripts/firebase-analytics.js"),
+		$.getScript("resources/scripts/firebase-auth.js"),
+		$.getScript("resources/scripts/firebase-firestore.js"),
+		$.getScript("resources/scripts/firebase-messaging.js"),
+		$.getScript("resources/scripts/firebase-performance.js"),
+		$.getScript("resources/scripts/sweetalert.js"),
+		$.Deferred(function (deferred) {
+			$(deferred.resolve);
+		})
+	).done(function () {
 
 		/* Initialise Firebase */
 
@@ -271,5 +284,5 @@ window.onload = function () {
 
 		});
 
-	}, 5000);
+	});
 }
