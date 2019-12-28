@@ -35,7 +35,7 @@ self.__precacheManifest = [
   },
   {
     "url": "lighthouse-cache_assisted_load.html",
-    "revision": "f9e892a2459841cccbb5e892b5315efd"
+    "revision": "d5ec21ddfd0958c0cd755171607050ef"
   },
   {
     "url": "lighthouse-first_load.html",
