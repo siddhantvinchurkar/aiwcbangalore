@@ -31,7 +31,15 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "9871a837df9970d9bf16465b1f532106"
+    "revision": "7e261814e41ef132f779b0caf1bfa9b8"
+  },
+  {
+    "url": "lighthouse-cache_assisted_load.html",
+    "revision": "f9e892a2459841cccbb5e892b5315efd"
+  },
+  {
+    "url": "lighthouse-first_load.html",
+    "revision": "685f7c73f2a151f7233c8df83cdd53e4"
   },
   {
     "url": "manifest.json",
@@ -230,10 +238,6 @@ self.__precacheManifest = [
     "revision": "a25058afba66062f3f811083ee5e4539"
   },
   {
-    "url": "resources/scripts/firebase-messaging.js",
-    "revision": "5ae2ed3138b43326f5995e5c3352035b"
-  },
-  {
     "url": "resources/scripts/firebase-performance.js",
     "revision": "e554b7647439d7d3ae2d267c5bf75b35"
   },
@@ -247,7 +251,7 @@ self.__precacheManifest = [
   },
   {
     "url": "resources/scripts/main.js",
-    "revision": "d13aa53f23b4a46601854a8ede3ab00f"
+    "revision": "85da9b813ea4ea662492047dac46bf2c"
   },
   {
     "url": "resources/scripts/materialize.min.js",

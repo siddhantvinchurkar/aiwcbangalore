@@ -28,14 +28,26 @@ window.onload = function () {
 
 	M.Modal.getInstance(progressDialogModal).open();
 
+	/* Initialise Firebase */
+
+	var firebaseConfig = {
+		apiKey: "AIzaSyD1Iz_74EZFY0YnYPzTUgP-5ikshIGxp_U",
+		authDomain: "aiwcbangalore.firebaseapp.com",
+		databaseURL: "https://aiwcbangalore.firebaseio.com",
+		projectId: "aiwcbangalore",
+		storageBucket: "aiwcbangalore.appspot.com",
+		messagingSenderId: "368426264616",
+		appId: "1:368426264616:web:a363e8f4888a1286f52d1d",
+		measurementId: "G-8T9HR2WRQP"
+	};
+	firebase.initializeApp(firebaseConfig);
+
 	/* Lazy load necessary JS files */
 
 	$.when(
-		$.getScript("resources/scripts/firebase-app.js"),
 		$.getScript("resources/scripts/firebase-analytics.js"),
 		$.getScript("resources/scripts/firebase-auth.js"),
 		$.getScript("resources/scripts/firebase-firestore.js"),
-		$.getScript("resources/scripts/firebase-messaging.js"),
 		$.getScript("resources/scripts/firebase-performance.js"),
 		$.getScript("resources/scripts/sweetalert.js"),
 		$.Deferred(function (deferred) {
@@ -43,24 +55,11 @@ window.onload = function () {
 		})
 	).done(function () {
 
-		/* Initialise Firebase */
+		/* Initialize Firebase services */
 
-		var firebaseConfig = {
-			apiKey: "AIzaSyD1Iz_74EZFY0YnYPzTUgP-5ikshIGxp_U",
-			authDomain: "aiwcbangalore.firebaseapp.com",
-			databaseURL: "https://aiwcbangalore.firebaseio.com",
-			projectId: "aiwcbangalore",
-			storageBucket: "aiwcbangalore.appspot.com",
-			messagingSenderId: "368426264616",
-			appId: "1:368426264616:web:a363e8f4888a1286f52d1d",
-			measurementId: "G-8T9HR2WRQP"
-		};
-		firebase.initializeApp(firebaseConfig);
 		firebase.analytics();
 		firebase.auth().useDeviceLanguage();
 		var perf = firebase.performance();
-		var messaging = firebase.messaging();
-		messaging.usePublicVapidKey("BN9nMIAer_ewk7AwkSPlpMGIE5SBjnV2x5gwhGqXTR2sfd9lvlSuhICcXklPsj76ULTV9qP_HftuvVjxvl4J0SE");
 		var db = firebase.firestore();
 
 		/* Kill UI Blocker */
@@ -177,13 +176,6 @@ window.onload = function () {
 								}).then(function () {
 									Swal.fire('Perfect!', 'We\'ll keep you updated.', 'success');
 									M.Modal.getInstance(progressDialogModal).close();
-									Notification.requestPermission().then((permission) => {
-										if (permission === 'granted') {
-											// TODO: Retrieve an Instance ID token for use with FCM.
-										} else {
-											console.log('Unable to get permission to notify.');
-										}
-									});
 								}).catch(function (error) {
 									console.error(error);
 								});
@@ -277,8 +269,6 @@ window.onload = function () {
 					scrollTop: $("body").offset().top
 				}, 7000);
 			});
-
-			//TODO: Lazy-load all images.
 
 			/* Begin execution of non-critical code */
 
