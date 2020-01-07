@@ -34,6 +34,26 @@ window.onload = function () {
 
 	M.Modal.getInstance(progressDialogModal).open();
 
+	/* Animate Title */
+
+	var switcher = true;
+	setInterval(function () {
+		if (switcher) {
+			switcher = false;
+			$('#english_title').fadeOut(1000);
+			setTimeout(function () {
+				$('#kannada_title').fadeIn(1000);
+			}, 1000);
+		}
+		else {
+			switcher = true;
+			$('#kannada_title').fadeOut(1000);
+			setTimeout(function () {
+				$('#english_title').fadeIn(1000);
+			}, 1000);
+		}
+	}, 4000);
+
 	/* Initialise Firebase */
 
 	var firebaseConfig = {
