@@ -31,7 +31,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "7e261814e41ef132f779b0caf1bfa9b8"
+    "revision": "943eafd87f5d2f1b650fb870bb6731e4"
   },
   {
     "url": "lighthouse-cache_assisted_load.html",
@@ -39,7 +39,7 @@ self.__precacheManifest = [
   },
   {
     "url": "lighthouse-first_load.html",
-    "revision": "685f7c73f2a151f7233c8df83cdd53e4"
+    "revision": "adb21db8c4806307ea44eedd5cecdfaa"
   },
   {
     "url": "manifest.json",
@@ -87,15 +87,15 @@ self.__precacheManifest = [
   },
   {
     "url": "resources/images/image_1/1366x768.webp",
-    "revision": "d95d5b9eda917fae2a1f9b5a1856b770"
+    "revision": "db0b20b061ce6c87c002b019e476df5b"
   },
   {
     "url": "resources/images/image_1/1920x1080.webp",
-    "revision": "9ea9b0bb8e7792a973ae6a071bbaee80"
+    "revision": "ec414952e3f37c77497e7f1678e79d7e"
   },
   {
     "url": "resources/images/image_1/432x768.webp",
-    "revision": "3d80a465b5e53c9f4eaee8cdc1d0782e"
+    "revision": "2d968242a5502f274e1b9c1a0bb983cb"
   },
   {
     "url": "resources/images/image_10/1366x768.webp",
@@ -251,7 +251,7 @@ self.__precacheManifest = [
   },
   {
     "url": "resources/scripts/main.js",
-    "revision": "85da9b813ea4ea662492047dac46bf2c"
+    "revision": "9ff44e536a23665b121b6961197f89ce"
   },
   {
     "url": "resources/scripts/materialize.min.js",
@@ -267,7 +267,7 @@ self.__precacheManifest = [
   },
   {
     "url": "resources/styles/main.css",
-    "revision": "6a5dc59587274826b7f9106162304b80"
+    "revision": "0faaf1440e2d5c28e8f156019098df02"
   },
   {
     "url": "resources/styles/material-icons.css",

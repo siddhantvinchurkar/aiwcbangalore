@@ -54,9 +54,13 @@ nav{
   }
   .stuff2{
     margin-top: 0.5em;
+    height: 5em !important;
   }
   nav ul a:hover{
     font-size: 2em;
+  }
+  nav ul a#no:hover{
+    font-size: 1em;
   }
 }
 
@@ -105,4 +109,8 @@ a .active{
 
 #s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9, #s10{
   background-color: rgba(255, 230, 0, 0.1);
+}
+
+.grey.lighten-5 {
+  background-color: rgb(253, 230, 188) !important;
 }
