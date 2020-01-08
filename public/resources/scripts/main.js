@@ -28,6 +28,7 @@ window.onload = function () {
 
 	/* Initialize materialize components */
 
+	$('.sidenav').sidenav();
 	$('.materialboxed').materialbox();
 	$('.parallax').parallax();
 	$('.modal#progressDialogModal').modal({ dismissible: false });
@@ -41,15 +42,19 @@ window.onload = function () {
 		if (switcher) {
 			switcher = false;
 			$('#english_title').fadeOut(1000);
+			$('#english_title_1').fadeOut(1000);
 			setTimeout(function () {
 				$('#kannada_title').fadeIn(1000);
+				$('#kannada_title_1').fadeIn(1000);
 			}, 1000);
 		}
 		else {
 			switcher = true;
 			$('#kannada_title').fadeOut(1000);
+			$('#kannada_title_1').fadeOut(1000);
 			setTimeout(function () {
 				$('#english_title').fadeIn(1000);
+				$('#english_title_1').fadeIn(1000);
 			}, 1000);
 		}
 	}, 4000);
@@ -295,6 +300,61 @@ window.onload = function () {
 					scrollTop: $("body").offset().top
 				}, 7000);
 			});
+
+			$("#about_us1").click(function () {
+				$('html, body').animate({
+					scrollTop: $("#s1").offset().top - 50
+				}, 2000);
+			});
+
+			$("#history1").click(function () {
+				$('html, body').animate({
+					scrollTop: $("#s5").offset().top - 50
+				}, 3000);
+			});
+
+			$("#activities1").click(function () {
+				$('html, body').animate({
+					scrollTop: $("#s6").offset().top - 50
+				}, 4000);
+			});
+
+			$("#hostel1").click(function () {
+				$('html, body').animate({
+					scrollTop: $("#s8").offset().top - 50
+				}, 2000);
+			});
+
+			$("#gallery1").click(function () {
+				$('html, body').animate({
+					scrollTop: $("#s9").offset().top - 50
+				}, 2000);
+			});
+
+			$("#our_team1").click(function () {
+				$('html, body').animate({
+					scrollTop: $("#s10").offset().top - 50
+				}, 2000);
+			});
+
+			$("#join_us1").click(function () {
+				$('html, body').animate({
+					scrollTop: $("#s7").offset().top - 50
+				}, 2000);
+			});
+
+			$("#contact_us1").click(function () {
+				$('html, body').animate({
+					scrollTop: $("#footer").offset().top - 50
+				}, 3000);
+			});
+
+			$("#scroll_up1").click(function () {
+				$('html, body').animate({
+					scrollTop: $("body").offset().top
+				}, 7000);
+			});
+
 
 			/* Begin execution of non-critical code */
 
