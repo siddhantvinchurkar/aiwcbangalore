@@ -31,7 +31,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "67f6b8f1245b4ffacc499b721d74eceb"
+    "revision": "561e7ef95d59ea94fbc5f1cde278bab5"
   },
   {
     "url": "lighthouse-cache_assisted_load.html",
@@ -366,6 +366,30 @@ self.__precacheManifest = [
     "revision": "bb2cd04a9bd0616213a4fe22773c22d2"
   },
   {
+    "url": "resources/images/image_30/1366x768.webp",
+    "revision": "63fd464daafe4aac80d827deae4c5735"
+  },
+  {
+    "url": "resources/images/image_30/1920x1080.webp",
+    "revision": "e1f15749845e96fab6f1ae165bdf40c0"
+  },
+  {
+    "url": "resources/images/image_30/432x768.webp",
+    "revision": "4442eed5dac135ecf229fdae52b3baff"
+  },
+  {
+    "url": "resources/images/image_31/1366x768.webp",
+    "revision": "7916ff4450abfae1293f94b735af12a2"
+  },
+  {
+    "url": "resources/images/image_31/1920x1080.webp",
+    "revision": "49668f26cffa32bdb8ef00f82654e85b"
+  },
+  {
+    "url": "resources/images/image_31/432x768.webp",
+    "revision": "b3c2a3521a88d0201be9e156bdf7c097"
+  },
+  {
     "url": "resources/images/image_4/1366x768.webp",
     "revision": "770ab21b1151a983c59c5117ae5d42c7"
   },
@@ -471,7 +495,7 @@ self.__precacheManifest = [
   },
   {
     "url": "resources/scripts/main.js",
-    "revision": "31e5728913aec84902d4cc396da210f1"
+    "revision": "0f7eec0ce3571737a4e7deec580223f3"
   },
   {
     "url": "resources/scripts/materialize.min.js",
