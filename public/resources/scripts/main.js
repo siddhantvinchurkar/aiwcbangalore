@@ -32,6 +32,8 @@ window.onload = function () {
 	$('.materialboxed').materialbox();
 	$('.parallax').parallax();
 	$('.modal#progressDialogModal').modal({ dismissible: false });
+	$('.modal#donateFormDialogModal').modal({ dismissible: true });
+	$('.modal#membershipFormDialogModal').modal({ dismissible: true });
 
 	M.Modal.getInstance(progressDialogModal).open();
 
@@ -58,6 +60,113 @@ window.onload = function () {
 			}, 1000);
 		}
 	}, 4000);
+
+	/* Function to check if an element is visible */
+
+	function isHidden(elem) {
+		var docViewTop = $(window).scrollTop();
+		var docViewBottom = docViewTop + $(window).height();
+
+		var elemTop = $(elem).offset().top;
+		var elemBottom = elemTop + $(elem).height();
+
+		return !((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+	}
+
+	/* Scrollspy */
+
+	setInterval(function () {
+		if (!isHidden(document.getElementById('s1'))) {
+			$('#about_us').addClass('bingo');
+			$('#history').removeClass('bingo');
+			$('#activities').removeClass('bingo');
+			$('#hostel').removeClass('bingo');
+			$('#gallery').removeClass('bingo');
+			$('#our_team').removeClass('bingo');
+			$('#join_us').removeClass('bingo');
+			$('#contact_us').removeClass('bingo');
+		}
+		else if (!isHidden(document.getElementById('s5'))) {
+			$('#about_us').removeClass('bingo');
+			$('#history').addClass('bingo');
+			$('#activities').removeClass('bingo');
+			$('#hostel').removeClass('bingo');
+			$('#gallery').removeClass('bingo');
+			$('#our_team').removeClass('bingo');
+			$('#join_us').removeClass('bingo');
+			$('#contact_us').removeClass('bingo');
+		}
+		else if (!isHidden(document.getElementById('s6'))) {
+			$('#about_us').removeClass('bingo');
+			$('#history').removeClass('bingo');
+			$('#activities').addClass('bingo');
+			$('#hostel').removeClass('bingo');
+			$('#gallery').removeClass('bingo');
+			$('#our_team').removeClass('bingo');
+			$('#join_us').removeClass('bingo');
+			$('#contact_us').removeClass('bingo');
+		}
+		else if (!isHidden(document.getElementById('s8'))) {
+			$('#about_us').removeClass('bingo');
+			$('#history').removeClass('bingo');
+			$('#activities').removeClass('bingo');
+			$('#hostel').addClass('bingo');
+			$('#gallery').removeClass('bingo');
+			$('#our_team').removeClass('bingo');
+			$('#join_us').removeClass('bingo');
+			$('#contact_us').removeClass('bingo');
+		}
+		else if (!isHidden(document.getElementById('s9h1'))) {
+			$('#about_us').removeClass('bingo');
+			$('#history').removeClass('bingo');
+			$('#activities').removeClass('bingo');
+			$('#hostel').removeClass('bingo');
+			$('#gallery').addClass('bingo');
+			$('#our_team').removeClass('bingo');
+			$('#join_us').removeClass('bingo');
+			$('#contact_us').removeClass('bingo');
+		}
+		else if (!isHidden(document.getElementById('s10h1'))) {
+			$('#about_us').removeClass('bingo');
+			$('#history').removeClass('bingo');
+			$('#activities').removeClass('bingo');
+			$('#hostel').removeClass('bingo');
+			$('#gallery').removeClass('bingo');
+			$('#our_team').addClass('bingo');
+			$('#join_us').removeClass('bingo');
+			$('#contact_us').removeClass('bingo');
+		}
+		else if (!isHidden(document.getElementById('s7'))) {
+			$('#about_us').removeClass('bingo');
+			$('#history').removeClass('bingo');
+			$('#activities').removeClass('bingo');
+			$('#hostel').removeClass('bingo');
+			$('#gallery').removeClass('bingo');
+			$('#our_team').removeClass('bingo');
+			$('#join_us').addClass('bingo');
+			$('#contact_us').removeClass('bingo');
+		}
+		else if (!isHidden(document.getElementById('footer'))) {
+			$('#about_us').removeClass('bingo');
+			$('#history').removeClass('bingo');
+			$('#activities').removeClass('bingo');
+			$('#hostel').removeClass('bingo');
+			$('#gallery').removeClass('bingo');
+			$('#our_team').removeClass('bingo');
+			$('#join_us').removeClass('bingo');
+			$('#contact_us').addClass('bingo');
+		}
+		else {
+			$('#about_us').removeClass('bingo');
+			$('#history').removeClass('bingo');
+			$('#activities').removeClass('bingo');
+			$('#hostel').removeClass('bingo');
+			$('#gallery').removeClass('bingo');
+			$('#our_team').removeClass('bingo');
+			$('#join_us').removeClass('bingo');
+			$('#contact_us').removeClass('bingo');
+		}
+	}, 100);
 
 	/* Initialise Firebase */
 
@@ -114,31 +223,31 @@ window.onload = function () {
 
 		/* Inject Content (Section 1) */
 
-		$('#s1h1').html('<i class="material-icons left" style="font-size: 1em; color:#996600;">error</i>What\'s AIWC?');
+		$('#s1h1').html('<i class="material-icons left" style="font-size: 1em; color:#AEEA00 !important;">error</i>What\'s AIWC?');
 		$('#s1p1').html('All India Women\'s Conference(AIWC) is a non - profit organisation founded in 1927 registered under Societies Registration Act XXI of 1850. It is a national organisation with one of the largest number of voluntary workers spread across five hundred branches across the country with more than a lakh and a half members.In 1928 the Mysore State Women\'s Conference was established in Bangalore, which changed it\'s name to AIWC Bangalore branch in 1932.');
-		$('#s1h2').html('<i class="material-icons left" style="font-size: 1em; color: #0000FF;">help</i>What do we do?');
+		$('#s1h2').html('<i class="material-icons left" style="font-size: 1em; color: #AEEA00;">help</i>What do we do?');
 		$('#s1p2').html('Our organisation is dedicated to the upliftment and betterment of the society. Since inception, AIWC has been deeply concerned about the economic, social and legal needs of women and society as whole and modification of laws pertaining dowry, child marriage, etc. The organisation has always adopted participatory approach in the implementation of it\'s programs focusing on women\'s education, health (both physical and mental), capacity building and income generation, etc. through a network of it\'s branches spread across the country.');
 
 		/* Inject Content (Section 2) */
 
-		$('#s2h1').html('<i class="material-icons left" style="font-size: 1em; color:#BB5500;">remove_red_eye</i>Our Vision');
+		$('#s2h1').html('<i class="material-icons left" style="font-size: 1em; color:#AEEA00;">remove_red_eye</i>Our Vision');
 		$('#s2p1').html('Emancipation, Education and Empowerment of Women.');
-		$('#s2h2').html('<i class="material-icons left" style="font-size: 1em; color: #0000FF;">emoji_objects</i>Our Mission');
+		$('#s2h2').html('<i class="material-icons left" style="font-size: 1em; color: #AEEA00;">emoji_objects</i>Our Mission');
 		$('#s2p2').html('Work actively for the progress and welfare of women and children. Help women utilize to the fullest the Fundamental Rights conferred on them by the Constitution of India. To work for a society where women are free from all types of violence, especially domestic violence and sexual harassment. To empower women and prepare them for taking up leadership roles.');
 
 		/* Inject Content (Section 3) */
 
-		$('#s3h1').html('<i class="material-icons left" style="font-size: 1em; color: #927001;">emoji_events</i>Things We\'ve Achieved');
+		$('#s3h1').html('<i class="material-icons left" style="font-size: 1em; color: #AEEA00;">emoji_events</i>Things We\'ve Achieved');
 		$('#s3p1').html('&bull;&emsp;Significant role in bringing about various Legislative Reforms like Sarda Act, Hindu Code Bill, Devdasi Act, Universal Adult Franchise, Factory and Mines Act and Maternity Benefits Act.<br /><br />&bull;&emsp;Pioneering Institutions founded by AIWC now functioning as autonomous apex bodies such as All India Women\'s Education Fund Association, founded in 1929 for the cause of education of women (AIWEFA). In 1932, India\'s first college of Home Sciences for women, Lady Irwin College, New Delhi was established by AIWEFA.<br /><br />&bull;&emsp;At the international level, AIWC has Consultative Status with the United Nations (ECOSOC), affiliated to the International Alliance for Women (IAW) and gained membership of <b>PPSEAWA</b>, <b>INFORSE</b>, <b>GWP</b> and <b>WREN</b>.');
 
 		/* Inject Content (Section 4) */
 
-		$('#s4h1').html('<i class="material-icons left" style="font-size: 1em; color: #FF00FF;">emoji_people</i>Keep in touch');
+		$('#s4h1').html('<i class="material-icons left" style="font-size: 1em; color: #AEEA00;">emoji_people</i>Keep in touch');
 		$('#s4p1').html('Leave us your email address so we can keep you updated about AIWC.');
 
 		/* Inject Content (Section 5) */
 
-		$('#s5h1').html('<i class="material-icons left" style="font-size: 1em; color: #008800">history</i>A Brief History of AIWC Bangalore');
+		$('#s5h1').html('<i class="material-icons left" style="font-size: 1em; color: #AEEA00;">history</i>A Brief History of AIWC Bangalore');
 		$('#s5p1').html('In 1927 under the guidance of Ms. Margaret Cousins, the AIWC was established for the welfare of women and children. All-India Women’s Conference on Educational Reform decided that there could be little progress in educational matters unless harmful social customs were eradicated. Hence the organization worked towards spreading its activities across the country. This movement coincided with the formation of the AIWC Bangalore branch under the name ‘Mysore State Women’s Conference ‘in the year  1928 under the leadership of  Lady Mirza Ismail. Mrs. Zeebundeh Begum Shirazi, wife of Mirza Ismail was appointed as the private secretary to the Maharajah of Mysore, who was later elevated as Diwan of Mysore in 1928. Existing documents date back to 1919 – 1920, which speak of Cousins being the first Head of the National Girls\' School at Mangalore, Karnataka and probably influencing and encouraging Mrs. Kamaladevi Chattopadhyay President AIWC 1944-45 from Mangalore Karnataka. In the subsequent year, Mysore was incorporated into the state of Karnataka and it is during this period ‘Mysore State Women’s Conference’ was renamed as All India Women’s Conference, Bangalore Branch.');
 		$('#s5p2').html('');
 		$('#s5p3').html('');
@@ -151,7 +260,7 @@ window.onload = function () {
 		$('#read_more').click(function () {
 			if (s) {
 				s = false;
-				$('#s5h1').html('<i class="material-icons left" style="font-size: 1em; color: #008800">history</i>A History of AIWC Bangalore');
+				$('#s5h1').html('<i class="material-icons left" style="font-size: 1em; color: #AEEA00;">history</i>A History of AIWC Bangalore');
 				$('#read_more').html('<i class="material-icons right">menu_book</i><b>Read less</b>');
 				$('#s5p2').html('The Bangalore branch experienced the zeal and vigor under the Presidentship of Lady Ramaswamy Mudaliar (1932), Mrs. R. A. Srinivas Iyengar (1973), Mrs. Bharathi Bai (1973), Mrs. Vilasini Nagesh (1998), Mrs. Nalinakshi Sanappa (2004), Mrs. Saroja Nanjappa (2010), Mrs. Sathyavathi Narayanan (2013), Mrs. Nirmala P. N. (2014) and, at present Mrs. Amitha Anand. These women along with many others who supported them worked tirelessly for the growth of the organization and betterment of the womenfolk. They soon became an active counterpart in the All India Women’s Movement.');
 				$('#s5p3').html('Mrs. Kamalamma Dasappa, from Mahila Seva Samaja (Basavangudi, Bangalore) was Member in-charge of the indigenous industries and; Shrimati Kamaladevi headed the Women Workers\' Training Scheme (Mangalore, India). The delegates from Karnataka during December-January, 1941-42 included Shrimati  Kamaladevi, Mrs. Mackinnyn, and Mrs. Krishnabai Panjikar. Some of the other co-opted members of AIWC were Mrs. B. Kameswaramma (Mysore) and Mrs. A. Sharadamma (Mahila Seva Samaja, Bangalore City).');
@@ -163,7 +272,7 @@ window.onload = function () {
 			}
 			else {
 				s = true;
-				$('#s5h1').html('<i class="material-icons left" style="font-size: 1em; color: #008800">history</i>A Brief History of AIWC Bangalore');
+				$('#s5h1').html('<i class="material-icons left" style="font-size: 1em; color: #AEEA00;">history</i>A Brief History of AIWC Bangalore');
 				$('#read_more').html('<i class="material-icons right">menu_book</i><b>Read more</b>');
 				$('#s5p2').html('');
 				$('#s5p3').html('');
@@ -177,12 +286,12 @@ window.onload = function () {
 
 		/* Inject Content (Section 6) */
 
-		$('#s6h1').html('<i class="material-icons left" style="font-size: 1em; color: #FF0077">rowing</i>Activities');
+		$('#s6h1').html('<i class="material-icons left" style="font-size: 1em; color: #AEEA00;">rowing</i>Activities');
 		$('#s6p1').html('As per the vision and mission of our Head office, AIWC Delhi, activities are being carried out by the branch under the guidance of our senior patrons, executive members, and members. The branch has 5 constituent branches. We have been conducting health checkup camps, mammogram for breast cancer detection, diabetics, medical aid to the needy, awareness programs and workshops on mental health, female feticide, dowry and harassment, HIV/AIDS, family /adolescent counseling, herbal / terrace gardening, domestic violence, skill training – tailoring/embroidery, distribution of uniforms, stress management program for SSLC students,  awareness on water management, consumer awareness, and many more programs. All important days and festival celebrations are conducted.');
 
 		/* Inject Content (Section 7) */
 
-		$('#s7h1').html('<i class="material-icons left" style="font-size: 1em; color: #0000FF">card_membership</i>Membership');
+		$('#s7h1').html('<i class="material-icons left" style="font-size: 1em; color: #AEEA00;">card_membership</i>Membership');
 		$('#s7p1').html('AIWC  wishes to grow further by enrolling all the women/girls of our Society throughout Bangalore so that we can reach our goal.');
 		$('#s7p2').html('<b>Eligibility: </b>Women aged 18 years and above.');
 		$('#s7p3').html('Life Membership amount ₹ 500 /-');
@@ -191,16 +300,16 @@ window.onload = function () {
 
 		/* Inject Content (Section 8) */
 
-		$('#s8h1').html('<i class="material-icons left" style="font-size: 1em; color: #009900">home</i>Hostel');
+		$('#s8h1').html('<i class="material-icons left" style="font-size: 1em; color: #AEEA00;">home</i>Hostel');
 		$('#s8p1').html('Working Women’s Hostel was established with the purpose of providing a safe and secure place to young ladies coming to Bangalore to pursue their profession from across the country. This encourages young girls to take up a career and become economically empowered. We provide a safe environment with all amenities provided. Located in prime areas close to bus stops & metro stations with 24 hours CCTV monitoring.');
 
 		/* Inject Content (Section 9) */
 
-		$('#s9h1').html('<i class="material-icons left" style="font-size: 1em; color: #FF00FF">add_a_photo</i>Gallery');
+		$('#s9h1').html('<i class="material-icons left" style="font-size: 1em; color: #AEEA00;">add_a_photo</i>Gallery');
 
 		/* Inject Content (Section 10) */
 
-		$('#s10h1').html('<i class="material-icons left" style="font-size: 1em; color: #BD5800">people</i>Our Team');
+		$('#s10h1').html('<i class="material-icons left" style="font-size: 1em; color: #AEEA00;">people</i>Our Team');
 
 		/* Authorize Session */
 
@@ -276,49 +385,49 @@ window.onload = function () {
 
 			$("#about_us").click(function () {
 				$('html, body').animate({
-					scrollTop: $("#s1").offset().top - 50
+					scrollTop: $("#s1").offset().top - 100
 				}, 2000);
 			});
 
 			$("#history").click(function () {
 				$('html, body').animate({
-					scrollTop: $("#s5").offset().top - 50
+					scrollTop: $("#s5").offset().top - 100
 				}, 3000);
 			});
 
 			$("#activities").click(function () {
 				$('html, body').animate({
-					scrollTop: $("#s6").offset().top - 50
+					scrollTop: $("#s6").offset().top - 100
 				}, 4000);
 			});
 
 			$("#hostel").click(function () {
 				$('html, body').animate({
-					scrollTop: $("#s8").offset().top - 50
+					scrollTop: $("#s8").offset().top - 100
 				}, 2000);
 			});
 
 			$("#gallery").click(function () {
 				$('html, body').animate({
-					scrollTop: $("#s9").offset().top - 50
+					scrollTop: $("#s9").offset().top - 100
 				}, 2000);
 			});
 
 			$("#our_team").click(function () {
 				$('html, body').animate({
-					scrollTop: $("#s10").offset().top - 50
+					scrollTop: $("#s10").offset().top - 100
 				}, 2000);
 			});
 
 			$("#join_us").click(function () {
 				$('html, body').animate({
-					scrollTop: $("#s7").offset().top - 50
+					scrollTop: $("#s7").offset().top - 100
 				}, 2000);
 			});
 
 			$("#contact_us").click(function () {
 				$('html, body').animate({
-					scrollTop: $("#footer").offset().top - 50
+					scrollTop: $("#footer").offset().top - 100
 				}, 3000);
 			});
 
@@ -330,49 +439,49 @@ window.onload = function () {
 
 			$("#about_us1").click(function () {
 				$('html, body').animate({
-					scrollTop: $("#s1").offset().top - 50
+					scrollTop: $("#s1").offset().top - 100
 				}, 2000);
 			});
 
 			$("#history1").click(function () {
 				$('html, body').animate({
-					scrollTop: $("#s5").offset().top - 50
+					scrollTop: $("#s5").offset().top - 100
 				}, 3000);
 			});
 
 			$("#activities1").click(function () {
 				$('html, body').animate({
-					scrollTop: $("#s6").offset().top - 50
+					scrollTop: $("#s6").offset().top - 100
 				}, 4000);
 			});
 
 			$("#hostel1").click(function () {
 				$('html, body').animate({
-					scrollTop: $("#s8").offset().top - 50
+					scrollTop: $("#s8").offset().top - 100
 				}, 2000);
 			});
 
 			$("#gallery1").click(function () {
 				$('html, body').animate({
-					scrollTop: $("#s9").offset().top - 50
+					scrollTop: $("#s9").offset().top - 100
 				}, 2000);
 			});
 
 			$("#our_team1").click(function () {
 				$('html, body').animate({
-					scrollTop: $("#s10").offset().top - 50
+					scrollTop: $("#s10").offset().top - 100
 				}, 2000);
 			});
 
 			$("#join_us1").click(function () {
 				$('html, body').animate({
-					scrollTop: $("#s7").offset().top - 50
+					scrollTop: $("#s7").offset().top - 100
 				}, 2000);
 			});
 
 			$("#contact_us1").click(function () {
 				$('html, body').animate({
-					scrollTop: $("#footer").offset().top - 50
+					scrollTop: $("#footer").offset().top - 100
 				}, 3000);
 			});
 

@@ -24,12 +24,12 @@ main {
 
  .page-footer .footer-copyright{
    font-size: 1.2em;
-   background-color: rgb(255, 230, 182) !important;
-   color: #000000 !important;
+   background-color: rgb(0, 0, 0) !important;
+   color: #AEEA00 !important;
  }
 
  .page-footer .footer-copyright .container{
-   background-color: rgba(255, 230, 182, 1) !important;
+   background-color: rgb(0, 0, 0);
  }
 
  .center {
@@ -61,6 +61,9 @@ nav{
   }
   nav ul a#no:hover{
     font-size: 1em;
+  }
+  .bingo{
+    font-size: 2em;
   }
 }
 
@@ -108,9 +111,21 @@ a .active{
 }
 
 #s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9, #s10{
-  background-color: rgba(255, 230, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+h1{
+  color: rgb(200, 255, 0);
+}
+
+p{
+  color: rgb(0, 255, 255);
 }
 
 .grey.lighten-5 {
-  background-color: rgb(253, 230, 188) !important;
+  background-color: rgb(40, 40, 40) !important;
+}
+
+.card-panel b{
+  color: #AEEA00;
 }

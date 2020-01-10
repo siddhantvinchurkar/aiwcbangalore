@@ -31,7 +31,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "561e7ef95d59ea94fbc5f1cde278bab5"
+    "revision": "852a559a907e7952668ca899b3afc85b"
   },
   {
     "url": "lighthouse-cache_assisted_load.html",
@@ -495,7 +495,7 @@ self.__precacheManifest = [
   },
   {
     "url": "resources/scripts/main.js",
-    "revision": "0f7eec0ce3571737a4e7deec580223f3"
+    "revision": "0e11cc8c25527b80294f276258837ad5"
   },
   {
     "url": "resources/scripts/materialize.min.js",
@@ -511,7 +511,7 @@ self.__precacheManifest = [
   },
   {
     "url": "resources/styles/main.css",
-    "revision": "0faaf1440e2d5c28e8f156019098df02"
+    "revision": "ce3ec9feabef3bc405ec70be0a931909"
   },
   {
     "url": "resources/styles/material-icons.css",
