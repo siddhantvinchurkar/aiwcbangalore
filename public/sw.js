@@ -31,7 +31,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "d0ecdced781bfa679102dd0ddabab151"
+    "revision": "27e7e29ecb50fdb89bcd5597d68f105a"
   },
   {
     "url": "lighthouse-cache_assisted_load.html",
@@ -43,7 +43,7 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.json",
-    "revision": "aea5a1a82374edbcbb1622804872789e"
+    "revision": "1f39bf8beb654f1e227fe10cbbe723a7"
   },
   {
     "url": "resources/images/404.webp",
