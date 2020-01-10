@@ -129,3 +129,11 @@ p{
 .card-panel b{
   color: #AEEA00;
 }
+
+.progress{
+  background-color: #000000;
+}
+
+.progress .indeterminate{
+  background-color: #AEEA00;
+}
