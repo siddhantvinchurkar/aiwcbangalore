@@ -73,7 +73,7 @@ window.onload = function () {
 		return !((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 	}
 
-	/* Scrollspy */
+	/* Scrollspy Desktop */
 
 	setInterval(function () {
 		if (!isHidden(document.getElementById('s1'))) {
@@ -165,6 +165,101 @@ window.onload = function () {
 			$('#our_team').removeClass('bingo');
 			$('#join_us').removeClass('bingo');
 			$('#contact_us').removeClass('bingo');
+		}
+	}, 100);
+
+	/* Scrollspy Mobile */
+
+	setInterval(function () {
+		if (!isHidden(document.getElementById('s1h1'))) {
+			$('#about_us1').addClass('selected');
+			$('#history1').removeClass('selected');
+			$('#activities1').removeClass('selected');
+			$('#hostel1').removeClass('selected');
+			$('#gallery1').removeClass('selected');
+			$('#our_team1').removeClass('selected');
+			$('#join_us1').removeClass('selected');
+			$('#contact_us1').removeClass('selected');
+		}
+		else if (!isHidden(document.getElementById('s5h1'))) {
+			$('#about_us1').removeClass('selected');
+			$('#history1').addClass('selected');
+			$('#activities1').removeClass('selected');
+			$('#hostel1').removeClass('selected');
+			$('#gallery1').removeClass('selected');
+			$('#our_team1').removeClass('selected');
+			$('#join_us1').removeClass('selected');
+			$('#contact_us1').removeClass('selected');
+		}
+		else if (!isHidden(document.getElementById('s6h1'))) {
+			$('#about_us1').removeClass('selected');
+			$('#history1').removeClass('selected');
+			$('#activities1').addClass('selected');
+			$('#hostel1').removeClass('selected');
+			$('#gallery1').removeClass('selected');
+			$('#our_team1').removeClass('selected');
+			$('#join_us1').removeClass('selected');
+			$('#contact_us1').removeClass('selected');
+		}
+		else if (!isHidden(document.getElementById('s8h1'))) {
+			$('#about_us1').removeClass('selected');
+			$('#history1').removeClass('selected');
+			$('#activities1').removeClass('selected');
+			$('#hostel1').addClass('selected');
+			$('#gallery1').removeClass('selected');
+			$('#our_team1').removeClass('selected');
+			$('#join_us1').removeClass('selected');
+			$('#contact_us1').removeClass('selected');
+		}
+		else if (!isHidden(document.getElementById('s9h1'))) {
+			$('#about_us1').removeClass('selected');
+			$('#history1').removeClass('selected');
+			$('#activities1').removeClass('selected');
+			$('#hostel1').removeClass('selected');
+			$('#gallery1').addClass('selected');
+			$('#our_team1').removeClass('selected');
+			$('#join_us1').removeClass('selected');
+			$('#contact_us1').removeClass('selected');
+		}
+		else if (!isHidden(document.getElementById('s10h1'))) {
+			$('#about_us1').removeClass('selected');
+			$('#history1').removeClass('selected');
+			$('#activities1').removeClass('selected');
+			$('#hostel1').removeClass('selected');
+			$('#gallery1').removeClass('selected');
+			$('#our_team1').addClass('selected');
+			$('#join_us1').removeClass('selected');
+			$('#contact_us1').removeClass('selected');
+		}
+		else if (!isHidden(document.getElementById('s7h1'))) {
+			$('#about_us1').removeClass('selected');
+			$('#history1').removeClass('selected');
+			$('#activities1').removeClass('selected');
+			$('#hostel1').removeClass('selected');
+			$('#gallery1').removeClass('selected');
+			$('#our_team1').removeClass('selected');
+			$('#join_us1').addClass('selected');
+			$('#contact_us1').removeClass('selected');
+		}
+		else if (!isHidden(document.getElementById('footerH'))) {
+			$('#about_us1').removeClass('selected');
+			$('#history1').removeClass('selected');
+			$('#activities1').removeClass('selected');
+			$('#hostel1').removeClass('selected');
+			$('#gallery1').removeClass('selected');
+			$('#our_team1').removeClass('selected');
+			$('#join_us1').removeClass('selected');
+			$('#contact_us1').addClass('selected');
+		}
+		else {
+			$('#about_us1').removeClass('selected');
+			$('#history1').removeClass('selected');
+			$('#activities1').removeClass('selected');
+			$('#hostel1').removeClass('selected');
+			$('#gallery1').removeClass('selected');
+			$('#our_team1').removeClass('selected');
+			$('#join_us1').removeClass('selected');
+			$('#contact_us1').removeClass('selected');
 		}
 	}, 100);
 
@@ -441,54 +536,63 @@ window.onload = function () {
 				$('html, body').animate({
 					scrollTop: $("#s1").offset().top - 100
 				}, 2000);
+				M.Sidenav.getInstance(sidenav).close();
 			});
 
 			$("#history1").click(function () {
 				$('html, body').animate({
 					scrollTop: $("#s5").offset().top - 100
 				}, 3000);
+				M.Sidenav.getInstance(sidenav).close();
 			});
 
 			$("#activities1").click(function () {
 				$('html, body').animate({
 					scrollTop: $("#s6").offset().top - 100
 				}, 4000);
+				M.Sidenav.getInstance(sidenav).close();
 			});
 
 			$("#hostel1").click(function () {
 				$('html, body').animate({
 					scrollTop: $("#s8").offset().top - 100
 				}, 2000);
+				M.Sidenav.getInstance(sidenav).close();
 			});
 
 			$("#gallery1").click(function () {
 				$('html, body').animate({
 					scrollTop: $("#s9").offset().top - 100
 				}, 2000);
+				M.Sidenav.getInstance(sidenav).close();
 			});
 
 			$("#our_team1").click(function () {
 				$('html, body').animate({
 					scrollTop: $("#s10").offset().top - 100
 				}, 2000);
+				M.Sidenav.getInstance(sidenav).close();
 			});
 
 			$("#join_us1").click(function () {
 				$('html, body').animate({
 					scrollTop: $("#s7").offset().top - 100
 				}, 2000);
+				M.Sidenav.getInstance(sidenav).close();
 			});
 
 			$("#contact_us1").click(function () {
 				$('html, body').animate({
 					scrollTop: $("#footer").offset().top - 100
 				}, 3000);
+				M.Sidenav.getInstance(sidenav).close();
 			});
 
 			$("#scroll_up1").click(function () {
 				$('html, body').animate({
 					scrollTop: $("body").offset().top
 				}, 7000);
+				M.Sidenav.getInstance(sidenav).close();
 			});
 
 

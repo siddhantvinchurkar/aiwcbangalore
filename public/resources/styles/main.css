@@ -137,3 +137,8 @@ p{
 .progress .indeterminate{
   background-color: #AEEA00;
 }
+
+.selected{
+  background-color: #AEEA00;
+  color: #000000 !important;
+}
