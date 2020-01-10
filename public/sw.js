@@ -31,7 +31,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "b480da8cb3de9c76c1fddef21422825f"
+    "revision": "d0ecdced781bfa679102dd0ddabab151"
   },
   {
     "url": "lighthouse-cache_assisted_load.html",
@@ -460,6 +460,62 @@ self.__precacheManifest = [
   {
     "url": "resources/images/image_9/432x768.webp",
     "revision": "70e817f09cb19d336d5352d9ca6620e5"
+  },
+  {
+    "url": "resources/images/member_images/1.webp",
+    "revision": "36bce89f3973403d76c3306e7ce28f31"
+  },
+  {
+    "url": "resources/images/member_images/10.webp",
+    "revision": "70fb687785921408568a3447b0a414ae"
+  },
+  {
+    "url": "resources/images/member_images/11.webp",
+    "revision": "14b0dd0a47638770081960319b579de3"
+  },
+  {
+    "url": "resources/images/member_images/12.webp",
+    "revision": "4950fbf18184a4a82a3771fa8456c340"
+  },
+  {
+    "url": "resources/images/member_images/13.webp",
+    "revision": "10cb14407b2cb19ebade8e2c99b43e78"
+  },
+  {
+    "url": "resources/images/member_images/14.webp",
+    "revision": "e5f9d3b2b09ae19c32ce1bf757d80c69"
+  },
+  {
+    "url": "resources/images/member_images/2.webp",
+    "revision": "81abc91db45ac64cbba403569baa4308"
+  },
+  {
+    "url": "resources/images/member_images/3.webp",
+    "revision": "317ecae2f77e3c113749de9f870fc455"
+  },
+  {
+    "url": "resources/images/member_images/4.webp",
+    "revision": "98595dddd5855f30a015e9cebdd1303b"
+  },
+  {
+    "url": "resources/images/member_images/5.webp",
+    "revision": "00dc99223d561f9acc0836a1ccb9d59d"
+  },
+  {
+    "url": "resources/images/member_images/6.webp",
+    "revision": "d69495d2aa57ff7b860d23e7029452c3"
+  },
+  {
+    "url": "resources/images/member_images/7.webp",
+    "revision": "f05495b86bec29e3ac8a16d3dbb202e4"
+  },
+  {
+    "url": "resources/images/member_images/8.webp",
+    "revision": "af8187c23c6af0e60dc9b5ccae9f7d9e"
+  },
+  {
+    "url": "resources/images/member_images/9.webp",
+    "revision": "cf96ce5d6b48df12d1df22df54ca16db"
   },
   {
     "url": "resources/images/mrs_margaret_cousins.webp",
