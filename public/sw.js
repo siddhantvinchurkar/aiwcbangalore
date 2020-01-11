@@ -31,7 +31,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "27e7e29ecb50fdb89bcd5597d68f105a"
+    "revision": "98648dacb3d10b3adea1fe59c4e92e53"
   },
   {
     "url": "lighthouse-cache_assisted_load.html",
@@ -388,6 +388,102 @@ self.__precacheManifest = [
   {
     "url": "resources/images/image_31/432x768.webp",
     "revision": "b3c2a3521a88d0201be9e156bdf7c097"
+  },
+  {
+    "url": "resources/images/image_32/1366x768.webp",
+    "revision": "75382ceee6e43744a6c29c2aba58a6de"
+  },
+  {
+    "url": "resources/images/image_32/1920x1080.webp",
+    "revision": "a947f41a351e879b565c220dbb276c5e"
+  },
+  {
+    "url": "resources/images/image_32/432x768.webp",
+    "revision": "6d8e94806572f48a79287907a7113c6b"
+  },
+  {
+    "url": "resources/images/image_33/1366x768.webp",
+    "revision": "f08dbe600e065cf5dbe59627fe15380a"
+  },
+  {
+    "url": "resources/images/image_33/1920x1080.webp",
+    "revision": "4cad6d0be3f7fa0d9affb72b73a41e9c"
+  },
+  {
+    "url": "resources/images/image_33/432x768.webp",
+    "revision": "ec2047979e451de61aaac5cfedee8a39"
+  },
+  {
+    "url": "resources/images/image_34/1366x768.webp",
+    "revision": "1328c89dd4daec219006b2af1e1cf5c4"
+  },
+  {
+    "url": "resources/images/image_34/1920x1080.webp",
+    "revision": "aa0e482265d9e826dd355f2f47a175dc"
+  },
+  {
+    "url": "resources/images/image_34/432x768.webp",
+    "revision": "ca9120bd1e7bea323896f0a749b08611"
+  },
+  {
+    "url": "resources/images/image_35/1366x768.webp",
+    "revision": "563450cd0dab14a13ad04789741ada88"
+  },
+  {
+    "url": "resources/images/image_35/1920x1080.webp",
+    "revision": "960899fa52d74179222b02fc1ede2f2d"
+  },
+  {
+    "url": "resources/images/image_35/432x768.webp",
+    "revision": "7f1aa81369dc706329b838b8a89136d4"
+  },
+  {
+    "url": "resources/images/image_36/1366x768.webp",
+    "revision": "cc4a5db12a92c78356959e0e3c4a665e"
+  },
+  {
+    "url": "resources/images/image_36/1920x1080.webp",
+    "revision": "172084dc5ea546bca51a835167e7c7c0"
+  },
+  {
+    "url": "resources/images/image_36/432x768.webp",
+    "revision": "cb497b27c19cebb540a3caa086e71e56"
+  },
+  {
+    "url": "resources/images/image_37/1366x768.webp",
+    "revision": "d5b8505399d2fc35e4bc4492fbd1fa5c"
+  },
+  {
+    "url": "resources/images/image_37/1920x1080.webp",
+    "revision": "dddd6a406ca916892becf2515ee62fb9"
+  },
+  {
+    "url": "resources/images/image_37/432x768.webp",
+    "revision": "be3916f89b43daed87e37298051f51f2"
+  },
+  {
+    "url": "resources/images/image_38/1366x768.webp",
+    "revision": "e2249264f9e8484756cafc91e9edd091"
+  },
+  {
+    "url": "resources/images/image_38/1920x1080.webp",
+    "revision": "9ea9b0bb8e7792a973ae6a071bbaee80"
+  },
+  {
+    "url": "resources/images/image_38/432x768.webp",
+    "revision": "80d93551bd77979652c07233561d4a6b"
+  },
+  {
+    "url": "resources/images/image_39/1366x768.webp",
+    "revision": "9fb1040491d67be68f56b1c7bb94ddac"
+  },
+  {
+    "url": "resources/images/image_39/1920x1080.webp",
+    "revision": "8eee45bf181475d5d8295ffef050de80"
+  },
+  {
+    "url": "resources/images/image_39/432x768.webp",
+    "revision": "ef41c141911e9d20c47918e8143247d5"
   },
   {
     "url": "resources/images/image_4/1366x768.webp",
