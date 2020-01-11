@@ -31,7 +31,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "7362e8901608b18321d53089e9db8888"
+    "revision": "69a00eb5b55e58c8999d745b3154d33d"
   },
   {
     "url": "lighthouse-cache_assisted_load.html",
@@ -498,6 +498,54 @@ self.__precacheManifest = [
     "revision": "e69a25176fe874c627c7ba4313514ec3"
   },
   {
+    "url": "resources/images/image_40/1366x768.webp",
+    "revision": "dec82f18463ee1739d965a7965ab137a"
+  },
+  {
+    "url": "resources/images/image_40/1920x1080.webp",
+    "revision": "5f3da6d72c24c36431aae301b16a7b09"
+  },
+  {
+    "url": "resources/images/image_40/432x768.webp",
+    "revision": "b871547622da28105c9b57291b1435ed"
+  },
+  {
+    "url": "resources/images/image_41/1366x768.webp",
+    "revision": "74b632f36e036bed475da275234110e3"
+  },
+  {
+    "url": "resources/images/image_41/1920x1080.webp",
+    "revision": "4f3df154147f36643df7238d958422f8"
+  },
+  {
+    "url": "resources/images/image_41/432x768.webp",
+    "revision": "04822b3fcaa656351317e643e06d2ade"
+  },
+  {
+    "url": "resources/images/image_42/1366x768.webp",
+    "revision": "9d2bc84b526e9d25a37e634229fed87b"
+  },
+  {
+    "url": "resources/images/image_42/1920x1080.webp",
+    "revision": "840232517e3e57a51b052cbad257cd8e"
+  },
+  {
+    "url": "resources/images/image_42/432x768.webp",
+    "revision": "bc4daddaeae58ef8455c1274164040d0"
+  },
+  {
+    "url": "resources/images/image_43/1366x768.webp",
+    "revision": "f5a3bd69c3d0ece34615c022d7b4d1cd"
+  },
+  {
+    "url": "resources/images/image_43/1920x1080.webp",
+    "revision": "82f4c11940b486dc522ef5ae75a088e7"
+  },
+  {
+    "url": "resources/images/image_43/432x768.webp",
+    "revision": "b4682ac8aa9a3c0d92b2c5c88fe0a3e4"
+  },
+  {
     "url": "resources/images/image_5/1366x768.webp",
     "revision": "e4e8df90d3edeb0079b84b20693129a2"
   },
@@ -647,7 +695,7 @@ self.__precacheManifest = [
   },
   {
     "url": "resources/scripts/main.js",
-    "revision": "b1aba3d5ea4dc31274af2f461986c74c"
+    "revision": "b441491539a546092864940d1c5172c2"
   },
   {
     "url": "resources/scripts/materialize.min.js",

@@ -319,7 +319,7 @@ window.onload = function () {
 		/* Inject Content (Section 1) */
 
 		$('#s1h1').html('<i class="material-icons left" style="font-size: 1em; color:#AEEA00 !important;">error</i>What\'s AIWC?');
-		$('#s1p1').html('All India Women\'s Conference(AIWC) is a non - profit organisation founded in 1927 registered under Societies Registration Act XXI of 1850. It is a national organisation with one of the largest number of voluntary workers spread across five hundred branches across the country with more than a lakh and a half members.In 1928 the Mysore State Women\'s Conference was established in Bangalore, which changed it\'s name to AIWC Bangalore branch in 1932.');
+		$('#s1p1').html('All India Women\'s Conference(AIWC) is a non - profit organisation founded in 1927 registered under Societies Registration Act XXI of 1850. It is a national organisation with one of the largest number of voluntary workers spread across five hundred branches across the country with more than a lakh and a half members.');
 		$('#s1h2').html('<i class="material-icons left" style="font-size: 1em; color: #AEEA00;">help</i>What do we do?');
 		$('#s1p2').html('Our organisation is dedicated to the upliftment and betterment of the society. Since inception, AIWC has been deeply concerned about the economic, social and legal needs of women and society as whole and modification of laws pertaining dowry, child marriage, etc. The organisation has always adopted participatory approach in the implementation of it\'s programs focusing on women\'s education, health (both physical and mental), capacity building and income generation, etc. through a network of it\'s branches spread across the country.');
 
