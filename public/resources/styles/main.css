@@ -115,11 +115,11 @@ a .active{
 }
 
 h1{
-  color: rgb(200, 255, 0);
+  color: #AEEA00;
 }
 
 p{
-  color: rgb(0, 255, 255);
+  color: #00FFFF;
 }
 
 .grey.lighten-5 {
