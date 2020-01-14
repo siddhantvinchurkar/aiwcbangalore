@@ -759,7 +759,7 @@ self.__precacheManifest = [
   },
   {
     "url": "resources/styles/main.css",
-    "revision": "f5d442b7c3387889c75cde5d98e66c9e"
+    "revision": "914aa090c18fbc95b7526609381e7ce9"
   },
   {
     "url": "resources/styles/material-icons.css",

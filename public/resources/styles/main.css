@@ -97,17 +97,16 @@ a .active{
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
-  border-radius: 5px;
+  background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.3); 
+  background: rgb(38, 166, 154, 0.6); 
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(38, 166, 154, 0.6); 
+  background: rgb(38, 166, 154, 1); 
 }
 
 #s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9, #s10{
