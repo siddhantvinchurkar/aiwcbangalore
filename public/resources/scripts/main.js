@@ -87,7 +87,7 @@ window.onload = function () {
 	/* Scrollspy Desktop */
 
 	setInterval(function () {
-		if (!isHidden(document.getElementById('s1'))) {
+		if (!isHidden(document.getElementById('s1h1'))) {
 			$('#about_us').addClass('bingo');
 			$('#history').removeClass('bingo');
 			$('#activities').removeClass('bingo');
@@ -97,7 +97,7 @@ window.onload = function () {
 			$('#join_us').removeClass('bingo');
 			$('#contact_us').removeClass('bingo');
 		}
-		else if (!isHidden(document.getElementById('s5'))) {
+		else if (!isHidden(document.getElementById('s5h1'))) {
 			$('#about_us').removeClass('bingo');
 			$('#history').addClass('bingo');
 			$('#activities').removeClass('bingo');
@@ -107,7 +107,7 @@ window.onload = function () {
 			$('#join_us').removeClass('bingo');
 			$('#contact_us').removeClass('bingo');
 		}
-		else if (!isHidden(document.getElementById('s6'))) {
+		else if (!isHidden(document.getElementById('s6h1'))) {
 			$('#about_us').removeClass('bingo');
 			$('#history').removeClass('bingo');
 			$('#activities').addClass('bingo');
@@ -117,7 +117,7 @@ window.onload = function () {
 			$('#join_us').removeClass('bingo');
 			$('#contact_us').removeClass('bingo');
 		}
-		else if (!isHidden(document.getElementById('s8'))) {
+		else if (!isHidden(document.getElementById('s8h1'))) {
 			$('#about_us').removeClass('bingo');
 			$('#history').removeClass('bingo');
 			$('#activities').removeClass('bingo');
@@ -147,7 +147,7 @@ window.onload = function () {
 			$('#join_us').removeClass('bingo');
 			$('#contact_us').removeClass('bingo');
 		}
-		else if (!isHidden(document.getElementById('s7'))) {
+		else if (!isHidden(document.getElementById('s7h1'))) {
 			$('#about_us').removeClass('bingo');
 			$('#history').removeClass('bingo');
 			$('#activities').removeClass('bingo');
@@ -157,7 +157,7 @@ window.onload = function () {
 			$('#join_us').addClass('bingo');
 			$('#contact_us').removeClass('bingo');
 		}
-		else if (!isHidden(document.getElementById('footer'))) {
+		else if (!isHidden(document.getElementById('footerH'))) {
 			$('#about_us').removeClass('bingo');
 			$('#history').removeClass('bingo');
 			$('#activities').removeClass('bingo');

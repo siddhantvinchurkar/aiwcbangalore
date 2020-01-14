@@ -743,7 +743,7 @@ self.__precacheManifest = [
   },
   {
     "url": "resources/scripts/main.js",
-    "revision": "06aaa3ec67c1fe065ace4a6b16c99839"
+    "revision": "f8a2a33f9d7969aa17b0923d1594b23d"
   },
   {
     "url": "resources/scripts/materialize.min.js",
