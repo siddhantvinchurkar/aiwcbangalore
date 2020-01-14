@@ -39,25 +39,36 @@ window.onload = function () {
 
 	/* Animate Title */
 
-	var switcher = true;
+	var switcher = 0;
 	setInterval(function () {
-		if (switcher) {
-			switcher = false;
-			$('#english_title').fadeOut(1000);
-			$('#english_title_1').fadeOut(1000);
-			setTimeout(function () {
-				$('#kannada_title').fadeIn(1000);
-				$('#kannada_title_1').fadeIn(1000);
-			}, 1000);
-		}
-		else {
-			switcher = true;
-			$('#kannada_title').fadeOut(1000);
-			$('#kannada_title_1').fadeOut(1000);
-			setTimeout(function () {
-				$('#english_title').fadeIn(1000);
-				$('#english_title_1').fadeIn(1000);
-			}, 1000);
+		switch (switcher) {
+			case 0:
+				switcher++;
+				$('#english_title').fadeOut(1000);
+				$('#english_title_1').fadeOut(1000);
+				setTimeout(function () {
+					$('#kannada_title').fadeIn(1000);
+					$('#kannada_title_1').fadeIn(1000);
+				}, 1000);
+				break;
+			case 1:
+				switcher++;
+				$('#kannada_title').fadeOut(1000);
+				$('#kannada_title_1').fadeOut(1000);
+				setTimeout(function () {
+					$('#celebrate').fadeIn(1000);
+					$('#celebrate_1').fadeIn(1000);
+				}, 1000);
+				break;
+			case 2:
+				switcher = 0;
+				$('#celebrate').fadeOut(1000);
+				$('#celebrate_1').fadeOut(1000);
+				setTimeout(function () {
+					$('#english_title').fadeIn(1000);
+					$('#english_title_1').fadeIn(1000);
+				}, 1000);
+				break;
 		}
 	}, 4000);
 
@@ -321,7 +332,7 @@ window.onload = function () {
 		$('#s1h1').html('<i class="material-icons left" style="font-size: 1em; color:#AEEA00 !important;">error</i>What\'s AIWC?');
 		$('#s1p1').html('All India Women\'s Conference(AIWC) is a non - profit organisation founded in 1927 registered under Societies Registration Act XXI of 1850. It is a national organisation with one of the largest number of voluntary workers spread across five hundred branches across the country with more than a lakh and a half members.');
 		$('#s1h2').html('<i class="material-icons left" style="font-size: 1em; color: #AEEA00;">help</i>What do we do?');
-		$('#s1p2').html('Our organisation is dedicated to the upliftment and betterment of the society. Since inception, AIWC has been deeply concerned about the economic, social and legal needs of women and society as whole and modification of laws pertaining dowry, child marriage, etc. The organisation has always adopted participatory approach in the implementation of it\'s programs focusing on women\'s education, health (both physical and mental), capacity building and income generation, etc. through a network of it\'s branches spread across the country.');
+		$('#s1p2').html('Our organisation is dedicated to the upliftment and betterment of the society. Since inception, AIWC has been deeply concerned about the economic, social and legal needs of women and society as a whole and modification of laws pertaining dowry, child marriage, etc. The organisation has always adopted participatory approach in the implementation of it\'s programs focusing on women\'s education, health (both physical and mental), capacity building and income generation, etc. through a network of it\'s branches spread across the country.');
 
 		/* Inject Content (Section 2) */
 
@@ -401,6 +412,20 @@ window.onload = function () {
 		/* Inject Content (Section 9) */
 
 		$('#s9h1').html('<i class="material-icons left" style="font-size: 1em; color: #AEEA00;">add_a_photo</i>Gallery');
+
+		var t = true;
+		$('#show_more').click(function () {
+			if (t) {
+				t = false;
+				$('#show_more').html('<i class="material-icons right">add_a_photo</i><b>Show less pictures</b>');
+				$('#hidden_pictures').show();
+			}
+			else {
+				t = true;
+				$('#show_more').html('<i class="material-icons right">add_a_photo</i><b>Show more pictures</b>');
+				$('#hidden_pictures').hide();
+			}
+		});
 
 		/* Inject Content (Section 10) */
 
