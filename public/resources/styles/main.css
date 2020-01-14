@@ -141,3 +141,15 @@ p{
   background-color: #AEEA00;
   color: #000000 !important;
 }
+
+.input-field label{
+  color: #AEEA00 !important;
+}
+
+.input-field .helper-text{
+  color: #AEEA00;
+}
+
+input{
+  color: #AEEA00;
+}
